@@ -1,0 +1,102 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  p {
+    font-family: $manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    @include respond-to(sm) {
+      display: none;
+      padding-top: 18px;
+    }
+
+    &.opened {
+      @include respond-to(sm) {
+        display: block;
+      }
+    }
+  }
+
+  h5 {
+    font-family: $manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 25px;
+    display: block;
+
+    @include respond-to(sm) {display: none;}
+  }
+
+  span {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond-to(sm) {
+    display: flex;
+  }
+
+  h4 {
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    text-align: right;
+    width: 100%;
+    padding-right: 36px;
+  }
+
+  button {
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: $ls-first;
+    text-align: left;
+    background: none;
+    padding: 7.5px 18px;
+    border: solid 1px;
+    border-radius: 30px;
+    width: 200px;
+    position: relative;
+    flex-shrink: 0;
+
+    &:after {
+      content: $if-schedule-arrow;
+      font-family: '#{$icomoon-font-family}' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      font-size: 24px;
+      line-height: 24px;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+
+    &.opened {
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

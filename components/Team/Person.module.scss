@@ -1,0 +1,89 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  @include respond-to(xs) {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  figure {
+    width: 158px;
+    height: 158px;
+    border-radius: 80px;
+    margin-bottom: 24px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    margin-bottom: 6px;
+  }
+
+  span {
+    color: $comment;
+    font-family: $manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: $ls-second;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    li {
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 12px;
+
+        @include respond-to(sm) {
+          width: 24px;
+          height: 24px;
+        }
+
+        &.twitter {
+          background: #55ACE3;
+        }
+        &.linkedin {
+          background: #2878B7;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  color: $white;
+  font-size: 7px;
+}

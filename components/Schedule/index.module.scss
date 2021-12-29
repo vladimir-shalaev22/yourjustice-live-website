@@ -1,0 +1,170 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 170px 27px 0;
+
+  @include respond-to(sm) {
+    padding: 85px 18px 0;
+  }
+
+  figure {
+    padding-bottom: 85px;
+    width: 100%;
+    max-width: 1246px;
+    border-bottom: solid 1px rgba(206, 219, 239, 0.3);
+
+    @include respond-to(sm) {
+      padding-bottom: 43px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.background {
+  margin-bottom: 56px;
+  background: radial-gradient(54.35% 54.35% at 50% 50%, rgba(197, 240, 248, 0.2) 0%, rgba(218, 183, 250, 0) 100%);
+
+  @include respond-to(sm) {
+    background: none;
+    width: 100%;
+    padding: 0 22px;
+  }
+}
+
+.header {
+  margin-bottom: 64px;
+
+  @include respond-to(sm) {
+    margin-bottom: 43px;
+  }
+
+  h2 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 36px;
+
+    @include respond-to(sm) {
+      font-size: 40px;
+      line-height: 58px;
+      margin-bottom: 24px;
+    }
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+    text-align: center;
+
+    @include respond-to(sm) {
+      font-size: 18px;
+      line-height: 31px;
+    }
+  }
+}
+
+.list {
+  width: 100%;
+  max-width: 1255px;
+
+  ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    li {
+      width: 20%;
+      margin-right: 28px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+
+      @include respond-to(sm) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 18px;
+      }
+
+      &:first-child {
+        span, button, h4, h5 {
+          color: $graph-first;
+          border-color: $graph-first;
+        }
+      }
+      &:nth-child(2) {
+        span, button, h4, h5 {
+          color: $graph-second;
+          border-color: $graph-second;
+        }
+      }
+      &:nth-child(3) {
+        span, button, h4, h5 {
+          color: $graph-third;
+          border-color: $graph-third;
+        }
+      }
+      &:nth-child(4) {
+        span, button, h4, h5 {
+          color: $graph-fourth;
+          border-color: $graph-fourth;
+        }
+      }
+      &:nth-child(5) {
+        span, button, h4, h5 {
+          color: $graph-fivth;
+          border-color: $graph-fivth;
+        }
+      }
+    }
+  }
+}
+
+.image {
+  @include respond-to(lg) {
+    display: none;
+  }
+
+  &Md, &Sm {
+    display: none;
+  }
+
+  &Md {
+    @include respond-to(lg) {
+      display: block;
+    }
+    @include respond-to(sm) {
+      display: none;
+    }
+  }
+
+  &Sm {
+    @include respond-to(sm) {
+      display: block;
+    }
+  }
+}

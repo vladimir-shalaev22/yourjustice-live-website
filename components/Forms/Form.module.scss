@@ -1,0 +1,308 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+@import 'styles/yourjustice.scss';
+@import 'components/Button/index.module.scss';
+
+.wrapper {
+  padding-top: 48px;
+  display: none;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(197, 240, 248, 0.2) 0%, rgba(218, 183, 250, 0) 100%);
+
+  @include respond-to(sm) {
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  &.opened {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+
+  form {
+    max-width: 404px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 15px;
+
+    @include respond-to(sm) {
+      order: 1;
+      width: 100%;
+      max-width: none;
+      margin-right: 0;
+    }
+
+    input, select, textarea {
+      color: $main-text;
+      font-family: $manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: $ls-second;
+      width: 100%;
+      padding: 10px 24px 10px 12px;
+      background: #FFFFFF;
+      border: 1px solid rgba(206, 219, 239, 0.3);
+      border-radius: 12px;
+      -webkit-appearance: none;
+
+      &::placeholder {
+        color: $comment;
+      }
+    }
+
+    select {
+      color: $comment;
+      cursor: pointer;
+      position: relative;
+
+      &:valid, option {
+        color: $main-text;
+      }
+    }
+
+    textarea {
+      height: 108px;
+      resize: none;
+    }
+
+    .button {
+      @extend .btn;
+      @extend .fill;
+      margin-top: 24px;
+      padding: 8.5px 69.5px;
+
+      &:active {
+        span {
+          color: #fff;
+        }
+      }
+
+      @include respond-to(sm) {
+        width: 100%;
+      }
+    }
+
+    .inputWrap {
+      width: 100%;
+      margin-bottom: 12px;
+      position: relative;
+
+      &:after {
+        @extend .if;
+        content: none;
+        color: $error;
+        font-size: 22px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 7px;
+      }
+
+      &.error {
+        &:after {
+          content: '\e91d';
+        }
+
+        input {
+          border-color: $error;
+        }
+      }
+
+      input {
+        margin-bottom: 0;
+      }
+    }
+
+    .textareaWrapper {
+      position: relative;
+      width: 100%;
+      margin-bottom: 12px;
+
+      &:after {
+        @extend .if;
+        content: none;
+        color: $error;
+        font-size: 22px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 7px;
+      }
+
+      &.error {
+        &:after {
+          content: '\e91d';
+        }
+
+        textarea {
+          border-color: $error;
+        }
+      }
+    }
+  }
+}
+
+.errorText {
+  color: $error;
+  font-family: $manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: $ls-second;
+  display: block;
+  padding-left: 10px;
+  margin-top: 6px;
+  display: none;
+
+  .error & {
+    display: block;
+  }
+}
+
+.success {
+  padding: 12px 24px 52px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 401px;
+  margin-right: 15px;
+
+  @include respond-to(sm) {
+    order: 1;
+    margin-right: 0;
+  }
+
+  img {
+    margin-bottom: 11px;
+  }
+
+  p {
+    color: $main-text;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: $ls-first;
+    text-align: left;
+    margin-bottom: 34px;
+
+    @include respond-to(sm) {
+      text-align: center;
+    }
+  }
+
+  span {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: $ls-first;
+    text-align: left;
+
+    @include respond-to(sm) {
+      text-align: center;
+    }
+  }
+}
+
+.right {
+  max-width: 650px;
+  width: 100%;
+  padding-top: 90px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to(sm) {
+    order: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 0;
+    max-width: none;
+  }
+
+  img {
+    margin-bottom: 36px;
+  }
+
+  p {
+    color: $comment;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: $ls-first;
+    text-align: center;
+    white-space: pre-wrap;
+    max-width: 548px;
+    width: 100%;
+
+    @include respond-to(lg) {
+      max-width: 406px;
+    }
+    @include respond-to(sm) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.selectWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+
+  &:after {
+    @extend .if;
+    content: '\e90c';
+    color: #31485F;
+    font-size: 22px;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    z-index: 5;
+    pointer-events: none;
+  }
+}
+
+.icon {
+  @include text-gradient(99.67deg, $gradient-second-start, -7.44%, $gradient-second-end, 111.26%);
+  margin-bottom: 36px;
+}
+
+.tag {
+  @extend .icon;
+  font-size: 101px;
+
+  @include respond-to(sm) {
+    font-size: 49px;
+  }
+}
+.wallet, .bag {
+  @extend .icon;
+  font-size: 122px;
+
+  @include respond-to(sm) {
+    font-size: 60px;
+  }
+}
