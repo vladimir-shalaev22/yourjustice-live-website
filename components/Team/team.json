@@ -94,18 +94,8 @@
           "position": "Role"
         },
         {
-          "name": "Oleg Korzhanov",
-          "ava": "/assets/images/team-ava-template.svg",
-          "position": "Role"
-        },
-        {
           "name": "Ksenia ",
           "ava": "/assets/images/ksenia.png",
-          "position": "Role"
-        },
-        {
-          "name": "Dmitriy",
-          "ava": "/assets/images/team-ava-template.svg",
           "position": "Role"
         },
         {
@@ -117,11 +107,51 @@
           "name": "Vladislas",
           "ava": "/assets/images/team-ava-template.svg",
           "position": "Role"
+        },
+        {
+          "name": "Dmitriy",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        },
+        {
+          "name": "Oleg Korzhanov",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
         }
       ]
     },
     {
       "head": "Advisory",
+      "members": [
+        {
+          "name": "Maksym",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        },
+        {
+          "name": "Danila Medvedev",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        },
+        {
+          "name": "Andrey Voronkov",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        },
+        {
+          "name": "Alex",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        },
+        {
+          "name": "Ilya",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Role"
+        }
+      ]
+    },
+    {
+      "head": "Ambassadors",
       "members": [
         {
           "name": "Maksym",

@@ -1,64 +1,153 @@
 # YourJustice WhitePaper
 
-<Paragraph className="subtitle">*We are building a bridge of justice to a fairer world. Join the game-changing project and create sovereignty and freedom for Humanity.*</Paragraph>
+### An Abstract
 
-## Jurisdictions, Based on Your Own Values
+YourJustice is a decentralized social network for people, communities, organizations, and countries. Here, anyone can create a jurisdiction with their own values, rules, laws, and economies, or join an existing one.
 
-Online tribes are built on values principles, not nationality.
+YJ helps you find like-minded people or a community with values that fit you, build more transparent economic relationships, increase safety in communities, avoid conflicts and cooperate faster and more efficiently.
 
-* Social rating as a humanity metric
-* Core values declared by communities, companies, states  and individuals
-* Easy search of like-minded people, community members, customers and providers, staff, citizens or netizens
+Jurisdictions' compliance is ensured through a decentralized evaluation and judicial system. In addition, each jurisdiction will be able to create its own ratings, and people will be free to choose which jurisdiction they belong to.
 
-### History
+Competition between jurisdictions is ensured by the basic Humanity environment, which grants each individual a set of inalienable rights.
 
-In the 21st century people want a fairer world liberated from violence, despotism and parasitism. A world full of freedom and safety of our lives and property.
+All public institutions on the platform are described in the elegant markup language YJML. It allows the formation of social institutions that are understandable to both an ordinary human using them and a machine executing them.
 
-We live in the era of virtual communities, geo-independence, cross-border interactions entering a whole new world of hybrid realities. Conservative legislation systems can't offer fast and affordable conflict resolution for this emerging diversity of human relations. Millions of people live with their own traumas and pains unspoken.
+YJ is also suitable for modeling and testing legislation and litigation, can serve as a training platform for aspiring lawyers, and as a service facility for professionals.
 
-### Bitcoin As A State Transition System
+YourJustice's mission is to change the rules of the game so that they are better for every living person. What those rules will be - that is for you, dear reader, to decide.
 
-From a technical standpoint, the ledger of a cryptocurrency such as Bitcoin can be thought of as a state transition system, where there is a "state" consisting of the ownership status of all existing bitcoins and a <Link className="inline" to="/">"state transition function"</Link> that takes a state and a transaction and outputs a new state which is the result. In a standard banking system, for example, the state is a balance sheet, a transaction is a request to move $X from A to B, and the state transition function reduces the value in A's account by $X and increases the value in B's account by $X. If A's account has less than $X in the first place, the state transition function returns an error. Hence, one can formally define:
+## Chapter 1: Problem and Conceptual Solution
 
-<Code>APPLY(S,TX) -> S' or ERROR</Code>
+<Paragraph className="subtitle">In the opening chapter, we will outline the pains of the existing equilibrium and offer our vision of possible solutions.</Paragraph>
 
-In the banking system defined above:
+**In short**: against the backdrop of a technological leap, the world is experiencing a public relationship crisis. 
 
-<Code>APPLY({ Alice: $50, Bob: $50 },"send $20 from Alice to Bob") = { Alice: $30, Bob: $70 }</Code>
+The demand for decentralization is growing. We are working on a constructor that allows you to create social relationships in a clean legal environment. We expect the platform to help humanity achieve a safer and more equitable environment. To make it all work, you need the help of "agents of change": active and caring people.
 
-## Social Rating & Justice on Blockchain
+### 3 levels of failures
 
-### Scripting
+At different levels of life, each of us encounters signs of suboptimal balance in the world.
 
-* **Namecoin** — created in 2010, Namecoin is best described as a decentralized name registration database. In decentralized protocols like Tor, Bitcoin and BitMessage, there needs to be some way of identifying accounts so that other people can interact with them, but in all existing solutions the only kind of identifier available is a pseudorandom hash like `1LW79wp5ZBqaHW1jL5TCiBCrhQYtHagUWy` Ideally, one would like to be able to have an account with a name like "george". However, the problem is that if one person can create an account named "george" then someone else can use the same process to register "george" for themselves as well and impersonate them. The only solution is a first-to-file paradigm, where the first registerer succeeds and the second fails - a problem perfectly suited for the Bitcoin consensus protocol. Namecoin is the oldest, and most successful, implementation of a name registration system using such an idea.
-* **Colored coins** — the purpose of colored coins is to serve as a protocol to allow people to create their own digital currencies - or, in the important trivial case of a currency with one unit, digital tokens, on the <Link className="inline" to="https://www.blockchain.com/ru/explorer">Bitcoin blockchain</Link>. In the colored coins protocol, one "issues" a new currency by publicly assigning a color to a specific Bitcoin UTXO, and the protocol recursively defines the color of other UTXO to be the same as the color of the inputs that the transaction creating them spent (some special rules apply in the case of mixed-color inputs). This allows users to maintain wallets containing only UTXO of a specific color and send them around much like regular bitcoins, backtracking through the blockchain to determine the color of any UTXO that they receive.
-* **Metacoins** — the idea behind a metacoin is to have a protocol that lives on top of Bitcoin, using Bitcoin transactions to store metacoin transactions but having a different state transition function, APPLY'. Because the metacoin protocol cannot prevent invalid metacoin transactions from appearing in the Bitcoin blockchain, a rule is added that if APPLY'(S,TX) returns an error, the protocol defaults to APPLY'(S,TX) = S. This provides an easy mechanism for creating an arbitrary cryptocurrency protocol, potentially with advanced features that cannot be implemented inside of Bitcoin itself, but with a very low development cost since the complexities of mining and networking are already handled by the Bitcoin protocol. Metacoins have been used to implement some classes of financial contracts, name registration and decentralized exchange.
+**At the level of everyday life**, we notice imperfections in familiar, long-standing relationships:
 
-<Table>
-|Group|At launch|After 1 year|After 5 year|
-|-----|---------|------------|------------|
-|Currency units|1.198X|1.458X|2.498X|
-|Purchasers|83 %|64 %|38 %|
-|Reserve spent pre-sale|8 %|6 %|3 %|
-|Reserve used post-sale|8 %|6 %|3 %|
-|Miners|0 %|17 %|52 %|
-</Table>
+- Teachers in schools do not communicate with children in the best way, children at the same time have problems with academic performance. 
+- Supervisors and subordinates play a "power game" instead of working together ecologically and effectively and creating overall value.
+- Officials tend to give citizens the runaround without trying to solve their problems.
+- Customers, implementers, and business partners make promises they can not (or will not) keep.
+- Prices are rising, not falling, even though progress seems to have been promised otherwise.
+- Even in personal relationships, things do not always go smoothly. Fairness, empathy and kindness are perceived as rarities and exceptions to the rule rather than something naturally occurring.
 
-## Notes and Further Reading
 
-### Notes
+**At the social level**, these imperfections are manifested at the level of large systems - education, healthcare, mass media, etc. anywhere in the world. None of these failures depend on a particular person from inside or outside the system:
 
-1. A sophisticated reader may notice that in fact a Bitcoin address is the hash of the elliptic curve public key, and not the public key itself. However, it is in fact perfectly legitimate cryptographic terminology to refer to the pubkey hash as a public key itself. This is because Bitcoin's cryptography can be considered to be a custom digital signature algorithm, where the public key consists of the hash of the ECC pubkey, the signature consists of the ECC pubkey concatenated with the ECC signature, and the verification algorithm involves checking the ECC pubkey in the signature against the ECC pubkey hash provided as a public key and then verifying the ECC signature against the ECC pubkey.
-2. Technically, the median of the 11 previous blocks.
-3. Internally, 2 and "CHARLIE" are both numbers, with the latter being in big-endian base 256 representation. Numbers can be at least 0 and at most 2256-1.
+- Difficulty in moving geographically in the world.
+- Irresponsibility at the corporate level - in production, in marketing, in culture, in attitudes towards the shared future.
+- School and university education that does not correspond to the reality of life.
+- Difficulty diagnosing illnesses and getting quality and timely medical care.
+- Inflation leveling savings and income growth.
+- People's dissatisfaction with the processes that take place in the countries where they live.
 
-### Further Reading
+**At the global level** “failures” lead to planetary consequences. These are:
 
-1. [Intrinsic value](/)
-2. [Smart property](/)
-3. [Smart contracts](/)
-4. [B-money](/)
-5. [Reusable proofs of work](/)
-6. [Bitcoin whitepaper](/)
-7. [Namecoin](/)
-8. [Zooko's triangle](/)
+- Climate change
+- Slowing of scientific progress and the pace of implementation of useful technologies.
+- The massive transition of people from the real world to the virtual.
+- Legalized forms of slavery at the level of financial institutions.
+- Poverty and growing inequality.
+
+
+> **Some of these issues become less important if you are young, live in a developed country, have the right gender, skin color, and sexual orientation. And a lot of money in your bank account.**
+> 
+
+### The problem as it is
+
+What is happening here is what we call the **problem of inadequate structures of social relationships**. It does not matter what their size and complexity, a significant portion of these structures are not optimal for human life and cause discomfort.
+
+The consequences of flaws in relational structures are many - from the irritation everyone sometimes experiences when they spend a long time getting a piece of paper with a stamp from a local government office to a malignant tumor that a doctor fails to find in time and that ruins their life plans.
+
+Some will scold teachers for not being competent and teaching their children poorly. Some of the poorly educated young people in the future will become an incompetent doctor who does not notice the cancer in the patient.
+Some want to change everything, but go to prison instead.
+
+
+### **Why did it happen?**
+
+We have reported on the reasons why the existing balance is disturbed in a separate article: "Escape from kindergarten". You can find it here.
+
+In short:
+- People are used to delegating decisions and are unwilling to take responsibility.
+- Experiments with forms of social relationships are extremely costly and difficult and often end in failure. Everyone remembers what happened to the USSR.
+- People are fixated on solving everyday problems and do not see the bigger picture.
+
+
+### **Demand for decentralization of relations**
+
+No one knows for sure how to create new, better functioning public institutions.
+
+**Many public institutions are already striving for more transparency and productivity** and moving towards decentralisation and open data. In one form or another, many countries around the world have legislation to introduce cryptocurrencies or are attempting to decentralise some of the registers of government information.
+
+However, when the initiative to decentralise comes from governments and the systems themselves do not include the possibility of opting out or changing, they are perceived as a form of control rather than something that people have freely chosen.
+
+At the same time, **enthusiasts, open-minded people, and even whole communities are willing to experiment** with public relationships. Digital nomads, DAO and blockchain creators, Greta Thunberg's followers and other meaning innovators are offering their own vision of the world and testing approaches for themselves.
+
+> There are more than 100 million digital nomads in the world alone. They already generate an economic value of $700 billion, and development of remote working practices will dramatically increase the size of this market.
+> 
+
+But both global citizens and change agents do not always find understandable forms of interaction in the existing legal framework. Consensus between them and government officials is still rare.
+
+One of the limitations of decentralisation is that existing blockchain solutions are still too complex for everyday use and mass distribution, and have therefore not yet succeeded in competing with centralised systems.
+
+Only a few crypto companies are able to bring decentralisation to the level of understanding of an ordinary citizen.
+
+
+### **The YourJustice Solution**
+
+We have invested several thousand hours to find a solution to the accumulated tensions between social relations, freedom and the need for change. We have found an interesting vector that we believe makes it possible to resolve these contradictions in the most elegant way.
+
+> We decided to create a constructor that allows people to independently form new social relationships in a clean legal environment and transfer existing relationships to the platform. All rules are recorded in a new blockchain form that is more suitable for everyday use than smart contracts.
+> 
+
+The constructor is based on the YJML specification we created for public relationships, which due to its flexibility allows you to implement your plans while being understandable even for a schoolchild.
+
+The technical side of the platform will be discussed in more detail in the following chapters.
+
+### **A quick overview of the platform**
+
+The result is a decentralized social network customizable through an easy-to-learn language designed specifically to describe public relations. This is a direct embodiment of the Code is Codex principle.
+
+Here are the elements of the solution that need to be put together to make it work well:
+
+- **Tiles** are those flexible descriptions of public relations of any complexity, be they the sale of cucumbers in the market, a court hearing on a high-profile case, the operation of a turnstile on the underground, or even the life of an entire country.
+- **Humanity** is a single environment that unites all people and grants them a set of inalienable rights. Humanity also ensures the security of existing relationships in a decentralised way.
+- **A multi rating** system allows people from different jurisdictions with different value systems to understand whether they should interact with each other.
+Courts in different jurisdictions offer everyone the opportunity to get justice in the value system they are close to, regardless of whether the defendant is on the platform or not.
+- **Everything for business** — contracts, wallets, currency, marketplaces and so on. One can earn both from creating successful configurations of social relationships and from successfully participating in them. And there are many more options.
+- **An account system** allows you to have an account for people and organisations (not just wallet holders). The rule of our system is 1 living person = 1 account. This rule is achieved with Pure Bio ID.
+- **A browser social network** will allow you to move around the blockchain like a social network while discussing problems that require solutions within the community.
+- **Network nodes** **** to decentralise the platform and protect it from attacks.
+
+We devoted the second and fifth chapters of the Whitepaper to a detailed description of the platform.
+
+### **Agents of changes (changemakers), that is, you**
+
+To change humanity, one platform is not enough. We need leaders and community representatives who want change. Those who are ready:
+
+1. to create new social relationships and underlying sustainable economic models.
+2. to integrate these relationships with existing relationships.
+
+In addition, there is a need to make the emerging relationships available for understanding, to bring them to every computer and phone in the world.
+
+Concrete examples of use cases (from contracts concluded on the platform to the description of constitutional relationships) are provided in the third chapter of the Whitepaper.
+
+### **What we expect and what we strive for**
+
+**We expect** the emergence of a large number of sovereign communities that will discuss and describe their relationships, public services, laws and value systems. They will begin to evaluate each other and resolve conflicts in court. They will naturally build a self-sustaining economy in a decentralised environment integrated with existing blockchains.
+
+> Such communities will allow people to live by the rules they understand, believe in and agree with.
+> 
+
+* **We expect** the emerging environment to be as understandable as possible for everyone: from legislators writing their proposals on the platform to schoolchildren whose socialisation is just beginning.
+* **We expect**that a common open-source platform will help the creators of change to join forces and shape not only the vision of a new equilibrium, but **the New Equilibrium itself, into reality**.
+* **We are also looking to** establish or facilitate relationships between digital communities and existing countries that manage territories. Such an association will be very useful. It will allow countries to attract active and educated people who can bring their economies with them. In return, people will have much greater freedom to choose the territory in which they wish to reside.
+* **We envision** that the emergence of a decentralised legal environment will change the current situation in the world and spread public consensus to the many sovereign communities that fill the infrastructure with a free economy.
+* **We also envision** that the platform will help humanity become a safer and more just environment, and that people will become more engaged, open and free, ready to respond more quickly and efficiently to challenges of all kinds.
+* **We are sure**: it will be fun!
