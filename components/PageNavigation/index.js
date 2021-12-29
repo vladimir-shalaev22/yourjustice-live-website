@@ -72,7 +72,7 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
         {search && <Search />}
         <p>On this page</p>
         <ul>
-          {nav.map((anchor, i) => <li key={anchor.id}>
+          {nav.map((anchor, i) => <li key={anchor.id + i}>
             <Link href={{
               pathname: rootPath,
               hash: anchor.id

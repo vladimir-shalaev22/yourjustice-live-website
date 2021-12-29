@@ -1,8 +1,0 @@
-{
-  "../components/Team/index.js -> ./team.json": {
-    "id": "./components/Team/team.json",
-    "files": [
-      "static/chunks/components_Team_team_json.js"
-    ]
-  }
-}

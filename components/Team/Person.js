@@ -11,7 +11,7 @@ export default function Person({person}) {
         <img src={person.ava} alt={person.name}/>
       </figure>
       <p>{person.name}</p>
-      <span>{person.position}</span>
+      {person.position && <span dangerouslySetInnerHTML={{ __html: person.position }}></span>}
       {person.socials && <ul>
         {person.socials.map((soc, i) => <li key={i}>
           <a href={soc.src} className={style[soc.icon]}>

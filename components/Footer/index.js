@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 
 import {Language, Icon} from 'components'
 import Socials from './Socials'
 
 import style from './index.module.scss'
+
+import {data} from './data'
 
 const socialsCommon = [
   {
@@ -56,7 +59,7 @@ const tgLanguage = [
   {
     icon: 'telegram',
     src: '/',
-    language: 'kr'
+    language: 'ko'
   },
   {
     icon: 'telegram',
@@ -66,17 +69,20 @@ const tgLanguage = [
 ]
 
 export default function Footer({lang, setLang}) {
+  const {locale} = useRouter()
+  const {title, profile, linksGroups, copy} = data
+
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
         <div className={style.siteLinks}>
           <div className={style.contacts} id="contacts">
-            <h3>Contact us:</h3>
+            <h3>{title[locale]}:</h3>
             <ul>
               <li>
                 <Link href="/">
                   <a className={style.profile}>
-                    <Icon icon="profile" className={style.icon} /><span>Andrey Panferov</span>
+                    <Icon icon="profile" className={style.icon} /><span>{profile[locale]}</span>
                   </a>
                 </Link>
               </li>
@@ -92,31 +98,14 @@ export default function Footer({lang, setLang}) {
             </ul>
           </div>
           <div className={style.links}>
-            <div className={style.linksGroup}>
-              <h3>YourJustice.live</h3>
+            {linksGroups.map((group, i) => <div key={`dsmc20-c1kc1` + i} className={style.linksGroup}>
+              <h3>{group.title[locale]}</h3>
               <ul>
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/">About</Link>
-                </li>
-                <li>
-                  <Link href="/">Communities</Link>
-                </li>
-                <li>
-                  <Link href="/">Developers</Link>
-                </li>
+                {group.links.map((link, i) => <li key={`dc1-fc2j42091` + i}>
+                  <Link href={link.link}>{link.text[locale]}</Link>
+                </li>)}
               </ul>
-            </div>
-            <div className={style.linksGroup}>
-              <h3>Technology</h3>
-              <ul>
-                <li>
-                  <Link href="/whitepaper">WhitePapers</Link>
-                </li>
-              </ul>
-            </div>
+            </div>)}
           </div>
           <div className={style.socials}>
             <Socials socials={socialsCommon} />
@@ -125,10 +114,11 @@ export default function Footer({lang, setLang}) {
         </div>
         <div className={style.copy}>
           <div className={style.copyLinks}>
-            <span>Copyright © 2021 YourJustice.live. All rights reserved.</span>
+            <span>{copy.text[locale]}</span>
             <ul>
-              <li><Link href="/">Privacy Policy</Link></li>
-              <li><Link href="/">Cookie Policy</Link></li>
+              {copy.links.map((link, i) => <li key={`vcm1-c34fc9-1` + i}>
+                <Link href={link.link}>{link.text[locale]}</Link>
+              </li>)}
             </ul>
           </div>
           <div className={style.language}>

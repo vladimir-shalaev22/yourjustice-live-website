@@ -1,54 +1,35 @@
 import React from 'react'
+import {useRouter} from 'next/router'
 
 import {Button} from 'components'
+
+import {data} from './data'
 
 import style from './index.module.scss'
 
 export default function Inners() {
+  const {locale} = useRouter()
+  const {header, sections} = data
 
   return <div className={style.wrapper}>
     <div className={style.header}>
-      <h2>What’s inside?</h2>
-      <p>Transparent anti-fragile Law 3.0 platform for all types of human relations.</p>
+      <h2>{header.title[locale]}</h2>
+      <p>{header.text[locale]}</p>
     </div>
     <div className={style.sections}>
-      <div className={`${style.section} ${style.sectionFirst}`}>
+      {sections.map(section => <div key={section.className} className={`${style.section} ${style[section.className]}`}>
         <figure>
-          <img src="/assets/images/inner-1.png" alt="inner-1"/>
+          <img src={section.image} alt={section.title[locale]}/>
         </figure>
-        <h3>Jurisdictions built on your own Values</h3>
-        <p>Online tribes built on shared human values, not nationalities</p>
+        <h3>{section.title[locale]}</h3>
+        {section.text && <p>{section.text[locale]}</p>}
         <ul>
-          <li>Core values declared by communities, companies, states and individuals</li>
-          <li>Social rating used as humanity metric</li>
-          <li>Easy search of like-minded people, community members, customers and providers, staff, citizens or netizens</li>
+          {section.list.map((li, i) => <li key={`s22nc234t-1` + i}>
+            {li[locale]}
+          </li>)}
         </ul>
-        <Button type='link' to="/article/jurisdictions" className={style.button}>Learn More</Button>
-      </div>
-      <div className={`${style.section} ${style.sectionSecond}`}>
-        <figure>
-          <img src="/assets/images/inner-2.png" alt="inner-2"/>
-        </figure>
-        <h3>Your own laws & justice on blockchain</h3>
-        <ul>
-          <li>Community and corporate governance</li>
-          <li>Constitution</li>
-          <li>Laws and Smart Laws</li>
-        </ul>
-        <Button type='link' to="/article/jurisdictions" className={style.button}>Learn More</Button>
-      </div>
-      <div className={`${style.section} ${style.sectionThird}`}>
-        <figure>
-          <img src="/assets/images/inner-3.png" alt="inner-3"/>
-        </figure>
-        <h3>Cross-chain economics</h3>
-        <ul>
-          <li>Smart contracts</li>
-          <li>Public services</li>
-          <li>Tokenomics</li>
-        </ul>
-        <Button type='link' to="/article/jurisdictions" className={style.button}>Learn More</Button>
-      </div>
+        <Button type='link' to={section.button.link} className={style.button}>{section.button.text[locale]}</Button>
+      </div>)}
     </div>
   </div>
 }

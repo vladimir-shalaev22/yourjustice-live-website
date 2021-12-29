@@ -2,22 +2,22 @@
 
 <Author ava="/assets/images/author-ava.png">Last edit: [\@glebsovin](/), October 30, 2021</Author>
 
-### WHAT IS A SMART CONTRACT?
+### AKILLI SÖZLEŞME NEDİR?
 
-In the 21st century people want a fairer world liberated from violence, despotism and parasitism. A world full of freedom and safety of our lives and property.
+21. yüzyılda insanlar şiddetten, istibdattan ve asalaklıktan arınmış daha adil bir dünya istiyorlar. Canımızın ve malımızın özgürlüğü ve güvenliğiyle dolu bir dünya.
 
-We live in the era of virtual communities, geo-independence, cross-border interactions entering a whole new world of hybrid realities. Conservative legislation systems can't offer fast and affordable conflict resolution for this emerging diversity of human relations. Millions of people live with their own traumas and pains unspoken.
+Sanal topluluklar, coğrafi bağımsızlık, hibrit gerçekliklerin yepyeni bir dünyasına giren sınır ötesi etkileşimler çağında yaşıyoruz. Muhafazakar mevzuat sistemleri, ortaya çıkan bu insan ilişkileri çeşitliliği için hızlı ve uygun fiyatlı uyuşmazlık çözümü sunamaz. Milyonlarca insan kendi travmaları ve acıları konuşulmadan yaşıyor.
 
-### PERMISSIONLESS
+### İZİNSİZ
 
-Anyone can write a smart contract and deploy it to the network. You just need to learn how to code in a smart contract language, and have enough ETH to deploy your contract. Deploying a smart contract is technically a transaction, so you need to pay your Gas in the same way that you need to pay gas for a simple ETH transfer. Gas costs for contract deployment are far higher, however.
+Herkes akıllı bir sözleşme yazabilir ve bunu ağa dağıtabilir. Akıllı bir sözleşme dilinde nasıl kod yazılacağını öğrenmeniz ve sözleşmenizi dağıtmak için yeterli ETH'ye sahip olmanız yeterlidir. Akıllı sözleşme dağıtmak teknik olarak bir işlemdir, bu nedenle Gazınızı basit bir ETH transferi için ödemeniz gereken şekilde ödemeniz gerekir. Bununla birlikte, sözleşme dağıtımı için gaz maliyetleri çok daha yüksektir.
 
-Ethereum has developer-friendly languages for writing smart contracts:
+Ethereum, akıllı sözleşmeler yazmak için geliştirici dostu dillere sahiptir:
 
 * Solidity
 * Vyper  
 
-<Link to="/">More on energy estimates</Link>
+<Link to="/">Enerji tahminleri hakkında daha fazla bilgi</Link>
 
 <Code>
 pragma solidity 0.8.7;

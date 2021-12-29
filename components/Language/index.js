@@ -18,7 +18,7 @@ export default function Language({setLang, top = false}) {
   const handleClick = (e) => {
     e.preventDefault()
     const lang = e.target.getAttribute('lang')
-    router.push(pathname, asPath, {locale: lang})
+    router.push(pathname, asPath, {locale: lang, scroll: false})
     setIsOpen(false)
   }
 
@@ -47,7 +47,7 @@ export default function Language({setLang, top = false}) {
           <button onClick={handleClick} lang="en"><img src="/assets/images/en.png" alt="English" /><span>English</span></button>
         </li>
         <li>
-          <button onClick={handleClick} lang="kr"><img src="/assets/images/kr.png" alt="Korean" /><span>한국인</span></button>
+          <button onClick={handleClick} lang="ko"><img src="/assets/images/ko.png" alt="Korean" /><span>한국인</span></button>
         </li>
         <li>
           <button onClick={handleClick} lang="tr"><img src="/assets/images/tr.png" alt="Turkish" /><span>Türk</span></button>

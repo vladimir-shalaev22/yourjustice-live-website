@@ -69,7 +69,7 @@
 
 .content {
   width: 100%;
-  padding: 90px 110px 120px 90px;
+  padding: 162px 110px 120px 90px;
   max-width: 856px;
 
   @include respond-to(lg) {
@@ -118,6 +118,7 @@
 .right {
   width: 220px;
   flex-shrink: 0;
+  padding-top: 154px;
 
   @include respond-to(lg) {
     order: 1;
@@ -131,7 +132,7 @@
   }
 
   .sticky {
-    top: 50px;
+    top: 110px;
 
     @include respond-to(lg) {
       top: 0;

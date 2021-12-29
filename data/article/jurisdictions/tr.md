@@ -1,22 +1,22 @@
 ## Bir insanlık metriği olarak sosyal derecelendirme
 
-In order to treat people better, countries should compete for citizens and companies, just like hotels compete for guests.
+Чтобы лучше относиться к людям, страны должны конкурировать за граждан и компании, так же как отели соревнуются за гостей.
 
-That's why we need virtual tribes and network states connected into a global community. Today those countries that actively attract migrants, like Liechtenstein, UAE, Singapore, Estonia, Malta, Cyprus, Switzerland etc., have a higher standard of living.
+Вот почему нам нужны виртуальные племена и сетевые государства, связанные в глобальное сообщество. Сегодня те страны, которые активно привлекают мигрантов, такие как Лихтенштейн, ОАЭ, Сингапур, Эстония, Мальта, Кипр, Швейцария и др., Имеют более высокий уровень жизни.
 
-YourJustice is open for everyone to create their own country with legislation, courts and contracts, cloud - first. Decentralized, censorship-resistant and sustainable.
+YourJustice открыт для всех, кто может создать свою собственную страну с законодательством, судами и контрактами, в первую очередь облачными. Децентрализованный, устойчивый к цензуре и устойчивый.
 
-### History
+### История
 
-Fungible items, on the other hand, can be exchanged because their value defines them rather than their unique properties.
+С другой стороны, взаимозаменяемые предметы можно обменивать, потому что их ценность определяет их, а не их уникальные свойства.
 
-For example, ETH or dollars are fungible because 1 ETH / $1 USD is exchangeable for another 1 ETH / $1 USD.
+Например, ETH или доллары взаимозаменяемы, потому что 1 ETH / 1 доллар США можно обменять на другой 1 ETH / 1 доллар США.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Sn5DhLjKYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## A digital vending machine
+## Цифровой торговый автомат
 
-A smart contract, like a vending machine, has logic programmed into it. Here's a simple example of how this vending machine might look like as a smart contract:
+В смарт-контракт, как в торговый автомат, заложена логика. Вот простой пример того, как этот торговый автомат может выглядеть как смарт-контракт:
 
 <Code>
 pragma solidity 0.8.7;
@@ -51,9 +51,9 @@ contract VendingMachine {
 }
 </Code>
 
-### NFT examples
+### Примеры NFT
 
-The NFT world is relatively new. In theory, the scope for NFTs is anything that is unique that needs provable ownership. Here are some examples of NFTs that exist today, to help you get the idea:
+Мир NFT относительно новый. Теоретически область применения NFT - это все, что уникально, что требует доказуемого владения. Вот несколько примеров существующих сегодня NFT, которые помогут вам понять:
 
 * [Intrinsic value](/)
 * [Smart property](/)
@@ -64,9 +64,9 @@ The NFT world is relatively new. In theory, the scope for NFTs is anything that 
 * [Namecoin](/)
 * [Zooko's triangle](/)
 
-### How do NFTs work?
+### Как работают NFT?
 
-NFTs are different from ERC-20 tokens, such as DAI or LINK, in that each individual token is completely unique and is not divisible. NFTs give the ability to assign or claim ownership of any unique piece of digital data, trackable by using Ethereum's blockchain as a public ledger. An NFT is minted from digital objects as a representation of digital or non-digital assets. For example, an NFT could represent:
+NFT отличаются от токенов ERC-20, таких как DAI или LINK, тем, что каждый отдельный токен полностью уникален и не делится. NFT дают возможность назначать или заявлять право собственности на любой уникальный фрагмент цифровых данных, отслеживаемых с помощью блокчейна Ethereum в качестве публичной книги. NFT создается из цифровых объектов как представление цифровых или нецифровых активов. Например, NFT может представлять:
 
 * Digital Art:
   * GIFs
@@ -81,16 +81,16 @@ NFTs are different from ERC-20 tokens, such as DAI or LINK, in that each individ
   * Signatures
 * Lots and lots more options to get creative with!
 
-### A greener future...
+### Более зеленое будущее ...
 
-For as long as Ethereum has been around, the energy-consumption of mining has been a huge focus area for developers and researchers. And the vision has always been to replace it as soon as possible. <Link to="/">More on Ethereum's vision</Link>
+С тех пор, как существует Ethereum, энергопотребление при майнинге было огромной областью внимания разработчиков и исследователей. И всегда стремились заменить его как можно скорее. <Link to="/">More on Ethereum's vision</Link>
 
-#### A greener Ethereum: Eth2
+#### Более зеленый Ethereum: Eth2
 
-Smart contracts are public on Ethereum and can be thought of as open APIs. That means you can call other smart contracts in your own smart contract to greatly extend what's possible. Contracts can even deploy other contracts.
+Смарт-контракты являются общедоступными в Ethereum и могут рассматриваться как открытые API. Это означает, что вы можете вызывать другие смарт-контракты в своем собственном смарт-контракте, чтобы значительно расширить возможности. Контракты могут даже использовать другие контракты.
 
 <Link to="/">More on energy estimates</Link>
 
-*We’ve provided the basic comparison to Visa to baseline your understanding of Eth2 energy consumption against a familiar name. However, in practice, it’s not really correct to compare based on number of transactions. Ethereum’s energy output is time-based. If Ethereum did more or less transactions from one minute to the next, the energy output would stay the same.*
+*Мы провели базовое сравнение с Visa, чтобы сопоставить ваше понимание энергопотребления Eth2 со знакомым названием. Однако на практике сравнивать по количеству транзакций некорректно. Выработка энергии Ethereum зависит от времени. Если Ethereum будет выполнять больше или меньше транзакций от одной минуты к другой, выход энергии останется прежним.*
 
 <Button fill="true">More on Dike v.1.0</Button>

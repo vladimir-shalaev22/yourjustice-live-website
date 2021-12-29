@@ -2,22 +2,22 @@
 
 <Author ava="/assets/images/author-ava.png">Last edit: [\@glebsovin](/), October 30, 2021</Author>
 
-### WHAT IS A SMART CONTRACT?
+### ЧТО ТАКОЕ SMART CONTRACT?
 
-In the 21st century people want a fairer world liberated from violence, despotism and parasitism. A world full of freedom and safety of our lives and property.
+В 21 веке люди хотят более справедливого мира, свободного от насилия, деспотизма и паразитизма. Мир, полный свободы и безопасности нашей жизни и имущества.
 
-We live in the era of virtual communities, geo-independence, cross-border interactions entering a whole new world of hybrid realities. Conservative legislation systems can't offer fast and affordable conflict resolution for this emerging diversity of human relations. Millions of people live with their own traumas and pains unspoken.
+Мы живем в эпоху виртуальных сообществ, географической независимости, трансграничных взаимодействий, вступающих в совершенно новый мир гибридных реальностей. Консервативные законодательные системы не могут предложить быстрое и доступное разрешение конфликтов для этого растущего разнообразия человеческих отношений. Миллионы людей живут со своими невысказанными травмами и болью.
 
-### PERMISSIONLESS
+### БЕЗ РАЗРЕШЕНИЯ
 
-Anyone can write a smart contract and deploy it to the network. You just need to learn how to code in a smart contract language, and have enough ETH to deploy your contract. Deploying a smart contract is technically a transaction, so you need to pay your Gas in the same way that you need to pay gas for a simple ETH transfer. Gas costs for contract deployment are far higher, however.
+Кто угодно может написать смарт-контракт и развернуть его в сети. Вам просто нужно научиться кодировать на языке смарт-контрактов и иметь достаточно ETH для развертывания контракта. Развертывание смарт-контракта технически является транзакцией, поэтому вам нужно платить за газ так же, как вам нужно платить за простой перевод ETH. Однако затраты на газ для развертывания по контракту намного выше.
 
-Ethereum has developer-friendly languages for writing smart contracts:
+В Ethereum есть удобные для разработчиков языки для написания смарт-контрактов:
 
 * Solidity
 * Vyper  
 
-<Link to="/">More on energy estimates</Link>
+<Link to="/">Подробнее об оценках энергии</Link>
 
 <Code>
 pragma solidity 0.8.7;

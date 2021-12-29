@@ -57,17 +57,17 @@
 }
 
 .section {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
-  padding: 70px 15px 15px 70px;
+  padding: 70px 20px 20px 70px;
   position: relative;
 
   @include respond-to(lg) {
-    height: 470px;
+    min-height: 470px;
     padding: 50px;
   }
   @include respond-to(sm) {
-    height: 695px;
+    min-height: 695px;
     padding: 18px;
   }
 
@@ -92,7 +92,7 @@
     }
     @include respond-to(sm) {
       padding: 208px 20px 20px;
-      height: 720px;
+      min-height: 720px;
     }
 
     figure {
@@ -129,7 +129,7 @@
     }
     @include respond-to(sm) {
       padding: 302px 20px 20px;
-      height: 670px;
+      min-height: 670px;
     }
 
     figure {
@@ -163,7 +163,7 @@
     }
     @include respond-to(sm) {
       padding: 278px 20px 20px;
-      height: 600px;
+      min-height: 600px;
     }
 
     figure {

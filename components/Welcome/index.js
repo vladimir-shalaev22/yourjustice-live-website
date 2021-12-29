@@ -1,22 +1,25 @@
 import React from 'react'
+import {useRouter} from 'next/router'
 import Link from 'next/link'
 
 import {Button} from 'components'
 
+import {data} from './data'
 
 import style from './index.module.scss'
 
 export default function Welcome() {
+  const {locale} = useRouter()
+  const {title, text, buttons} = data
 
   return <div className={style.welcome} id="vision">
-    <h2>Welcome to The&nbsp;New&nbsp;Equilibrium!</h2>
-    <p>We&nbsp;are&nbsp;building&nbsp;a&nbsp;justice&nbsp;bridge to&nbsp;a&nbsp;fairer&nbsp;world. <br />Join the game-changing project and create sovereignty and freedom  for Humanity.</p>
+    <h2 dangerouslySetInnerHTML={{ __html: title[locale] }}></h2>
+    <p dangerouslySetInnerHTML={{ __html: text[locale] }}></p>
     <ul>
+      {buttons.map((button, i) => <li key={`wjmc3021d345jc2` + i}>
+        <Button className={style.button} type="link" fill={button.fill} to={button.link}>{button[locale]}</Button>
+      </li>)}
       <li>
-        <Button className={style.button} type="link" to="/whitepaper">WhitePaper</Button>
-      </li>
-      <li>
-        <Button className={style.button} type="link" fill={true} to="/answers/smart-contracts">Create a jurisdiction</Button>
       </li>
     </ul>
   </div>

@@ -1,10 +1,38 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Head from "next/head"
 import {Header, Footer} from 'components'
 
+import style from './style.module.scss'
+
+const MIN_WIDTH = 428
+
 function Layout({children}) {
+  useEffect(() => {
+    // change viewport for phones
+    const changeViewport = () => {
+      const viewport = document.querySelector("meta[name=viewport]");
+      const newViewport = document.createElement("meta")
+      newViewport.setAttribute("name", "viewport")
+      if (window.screen.width <= MIN_WIDTH) {
+        document.head.removeChild(viewport);
+        newViewport.setAttribute("content", "width=" + MIN_WIDTH);
+      } else {
+        document.head.removeChild(viewport);
+        newViewport.setAttribute("content", "width=device-width, initial-scale=1")
+      }
+      document.head.appendChild(newViewport)
+    }
+    window.addEventListener('resize', changeViewport)
+
+    changeViewport()
+
+    return () => {
+      window.removeEventListener('resize', changeViewport)
+    }
+  }, [])
+
   return (
-    <div>
+    <div className={style.layout}>
       <Head>
         <link
           rel="preload"

@@ -56,7 +56,7 @@ export default function Article({data, page}) {
         <div className={style.sidebar}>
           <div className={style.sticky}>
             <Button className={style.button} reverse={true} onClick={handleBack}>Back</Button>
-            <PageNavigation rootPath={`/article/${page}#`} nav={nav} side="left" />
+            <PageNavigation rootPath={`/article/${page}`} nav={nav} side="left" />
           </div>
         </div>
         <div className={style.content}>

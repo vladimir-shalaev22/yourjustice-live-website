@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import {useRouter} from 'next/router'
 
 import Form from './Form'
 
 import style from './index.module.scss'
+
+import {data} from './data'
 
 const tabsFalse = {
   developers: false,
@@ -13,6 +16,8 @@ const tabsFalse = {
 export default function Forms() {
   const [tab, setTab] = useState({})
   const [isMobile, setIsMobile] = useState(false)
+  const {locale} = useRouter()
+  const {header, tabs} = data
 
   const handleTab = e => {
     e.preventDefault()
@@ -57,28 +62,20 @@ export default function Forms() {
     <div className={style.wrapper} id="joinus">
       <div className={style.container}>
         <div className={style.header}>
-          <h2>Join us! </h2>
-          <p>Share your thoughts and skills. We are open for fresh ideas and valuable contributors.</p>
+          <h2>{header.title[locale]}</h2>
+          <p>{header.text[locale]}</p>
         </div>
         <div className={style.forms}>
           <div className={style.tabs}>
-            <a className={tab.developers ? style.active : ''} tab="developers" onClick={handleTab}><span>Developers</span></a>
-            <a className={tab.investors ? style.active : ''} tab="investors" onClick={handleTab}><span>Investors</span></a>
-            <a className={tab.lawyers ? style.active : ''} tab="lawyers" onClick={handleTab}><span>Lawyers</span></a>
+            {tabs.map((item, i) => <a key={`dsmc32-dc1m1` + i} className={tab[item.tab] ? style.active : ''} tab={item.tab} onClick={handleTab}>
+              <span>{item.text[locale]}</span>
+            </a>)}
           </div>
           <div className={style.form}>
-            <div className={tab.developers ? style.opened : ''}>
-              <a tab="developers" onClick={handleToogle}><span>Developers</span></a>
-              <Form type="developers" isOpen={tab.developers} />
-            </div>
-            <div className={tab.investors ? style.opened : ''}>
-              <a tab="investors" onClick={handleToogle}><span>Investors</span></a>
-              <Form type="investors" isOpen={tab.investors} />
-            </div>
-            <div className={tab.lawyers ? style.opened : ''}>
-              <a tab="lawyers" onClick={handleToogle}><span>Lawyers</span></a>
-              <Form type="lawyers" isOpen={tab.lawyers} />
-            </div>
+            {tabs.map((item, i) => <div key={`mc2349g2-cf1cm` + i} className={tab[item.tab] ? style.opened : ''}>
+              <a tab={item.tab} onClick={handleToogle}><span>{item.text[locale]}</span></a>
+              <Form type={item.tab} isOpen={tab[item.tab]} />
+            </div>)}
           </div>
         </div>
       </div>

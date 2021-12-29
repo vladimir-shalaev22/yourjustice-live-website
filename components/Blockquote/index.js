@@ -1,10 +1,15 @@
 import React from 'react'
+import {useRouter} from 'next/router'
 
 import {Icon} from 'components'
 
 import style from './index.module.scss'
 
+import {data} from './data'
+
 export default function Blockquote() {
+  const {locale} = useRouter()
+  const {author, quote} = data
   return <div className={style.blockquote}>
     <div className={style.container}>
       <div className={style.person}>
@@ -12,8 +17,8 @@ export default function Blockquote() {
           <img src="/assets/images/blockquote-ava.png" alt="Balaji Srinivasan"/>
         </figure>
         <span>2017</span>
-        <p className={style.personName}>Balaji Srinivasan</p>
-        <p className={style.personPosition}>Angel investor<br />Former CTO of Coinbase</p>
+        <p className={style.personName}>{author.name[locale]}</p>
+        <p className={style.personPosition} dangerouslySetInnerHTML={{ __html: author.position[locale] }}></p>
       </div>
       <div className={style.quote}>
         <blockquote>
@@ -21,16 +26,13 @@ export default function Blockquote() {
             <Icon icon="quote-left" className={style.quoteIcon} />
           </span>
           <ul>
-            <li>Start your own company</li>
-            <li>Start your own community</li>
-            <li>Start your own currency</li>
-            <li>Start your own country<span>Network States</span></li>
+            {quote.list[locale].map((li, i) => <li key={`sdf2cd115plamc` + i} dangerouslySetInnerHTML={{ __html: li}}></li>)}
           </ul>
           <span className={style.quoteRight}>
             <Icon icon="quote-right" className={style.quoteIcon} />
           </span>
         </blockquote>
-        <p>Let’s get here together!</p>
+        <p>{data.quote.postscriptum[locale]}</p>
       </div>
     </div>
   </div>

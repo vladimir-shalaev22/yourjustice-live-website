@@ -1,13 +1,17 @@
 import React, {useState} from 'react'
-// import {HashLink as Link} from 'react-router-hash-link'
+import {useRouter} from 'next/router'
 import Link from 'next/link'
 
 import {Language} from 'components'
+
+import {data} from './data'
 
 import style from './index.module.scss'
 
 export default function Header({lang, setLang}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const {locale} = useRouter()
+  const {links} = data
 
   const handleMenu = e => {
     e.preventDefault()
@@ -25,28 +29,13 @@ export default function Header({lang, setLang}) {
     <div className={style.headerContainer}>
       <Link href="/">
         <a className={style.toHome}>
-          YourJustice.life
+          YourJustice.live
         </a>
       </Link>
       <ul className={style.links}>
-        <li>
-          <Link href="/#vision">Vision</Link>
-        </li>
-        <li>
-          <Link href="/#ecosystem">Ecosystem</Link>
-        </li>
-        <li>
-          <Link href="/#equilibrium">Equilibrium</Link>
-        </li>
-        <li>
-          <Link href="/#team">Team</Link>
-        </li>
-        <li>
-          <Link href="/#joinus">Join us</Link>
-        </li>
-        <li>
-          <Link href="/#contacts">Contacts</Link>
-        </li>
+        {links.map((link, i) => <li key={`23c322p11kc1` + i}>
+          <Link href={link.link}>{link.text[locale]}</Link>
+        </li>)}
       </ul>
       <div className={style.languages}>
         <Language lang={lang} setLang={setLang} />
@@ -62,24 +51,9 @@ export default function Header({lang, setLang}) {
             <Language lang={lang} setLang={setLang} />
           </div>
           <ul>
-            <li>
-              <Link href="/#vision">Vision</Link>
-            </li>
-            <li>
-              <Link href="/#ecosystem">Ecosystem</Link>
-            </li>
-            <li>
-              <Link href="/#equilibrium">Equilibrium</Link>
-            </li>
-            <li>
-              <Link href="/#team">Team</Link>
-            </li>
-            <li>
-              <Link href="/#joinus">Join us</Link>
-            </li>
-            <li>
-              <Link href="/#contacts">Contacts</Link>
-            </li>
+            {links.map((link, i) => <li key={`23c322p11kc1` + i}>
+              <Link href={link.link}>{link.text[locale]}</Link>
+            </li>)}
           </ul>
         </div>
       </div>
