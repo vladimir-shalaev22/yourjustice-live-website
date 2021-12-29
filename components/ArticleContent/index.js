@@ -11,14 +11,19 @@ export default function ArticleContent({content, setNav}) {
   useEffect(() => {
     if (mdRef.current) {
       const elems = mdRef.current.querySelectorAll('h1, h2, h3, h4, h5, h6')
-      // const levels = new Set([...elems].map(el => el.nodeName).sort((a, b) => a[1] - b[1]))
-      // console.log(levels)
-      // const nav = [...elems].map(elem => {
-      //   return {
-      //
-      //   }
-      // })
-      setNav([...elems])
+      const nav = [...elems].reduce((acc, curr) => {
+        const id = curr.getElementsByTagName('a')[0]?.id
+        if (!id) {
+          return acc
+        }
+        const text = curr.innerText
+        const anchor = {
+          id,
+          text
+        }
+        return acc.concat(anchor)
+      }, [])
+      setNav(nav)
     }
   }, [mdRef, content, setNav])
 

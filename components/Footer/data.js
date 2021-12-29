@@ -87,7 +87,7 @@ export const data = {
     },
     links: [
       {
-        link: '/',
+        link: '/privacy',
         text: {
           en: 'Privacy Policy',
           ru: 'Политика конфиденциальности',
@@ -96,10 +96,10 @@ export const data = {
         }
       },
       {
-        link: '/',
+        link: '/disclaimer',
         text: {
-          en: 'Cookie Policy',
-          ru: 'Политика cookie',
+          en: 'Legal Disclaimer',
+          ru: 'Отказ от ответственности',
           tr: 'Çerez politikası',
           ko: '쿠키 정책'
         }

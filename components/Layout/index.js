@@ -64,6 +64,11 @@ function Layout({children}) {
           as="font"
           crossOrigin=""
         />
+        <title>YourJustice.life</title>
+        <meta name="description" content="Decentralized laws, justice and economics for digital tribes and sovereign individuals." />
+        <meta property="og:title" content="YourJustice.life" />
+        <meta property="og:description" content="Decentralized laws, justice and economics for digital tribes and sovereign individuals." />
+        <meta property="og:image" content="/public/assets/images/social-preview.jpg" />
       </Head>
       <Header />
       {children}

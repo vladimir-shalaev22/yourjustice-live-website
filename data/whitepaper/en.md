@@ -1,6 +1,6 @@
-# YourJustice WhitePaper
+# <a id="yourjustice-whitepaper"></a>YourJustice WhitePaper
 
-### An Abstract
+### <a id="an-abstract"></a>An Abstract
 
 YourJustice is a decentralized social network for people, communities, organizations, and countries. Here, anyone can create a jurisdiction with their own values, rules, laws, and economies, or join an existing one.
 
@@ -16,21 +16,21 @@ YJ is also suitable for modeling and testing legislation and litigation, can ser
 
 YourJustice's mission is to change the rules of the game so that they are better for every living person. What those rules will be - that is for you, dear reader, to decide.
 
-## Chapter 1: Problem and Conceptual Solution
+## <a id="problem-and-conceptual-solution"></a>Chapter 1: Problem and Conceptual Solution
 
 <Paragraph className="subtitle">In the opening chapter, we will outline the pains of the existing equilibrium and offer our vision of possible solutions.</Paragraph>
 
-**In short**: against the backdrop of a technological leap, the world is experiencing a public relationship crisis. 
+**In short**: against the backdrop of a technological leap, the world is experiencing a public relationship crisis.
 
 The demand for decentralization is growing. We are working on a constructor that allows you to create social relationships in a clean legal environment. We expect the platform to help humanity achieve a safer and more equitable environment. To make it all work, you need the help of "agents of change": active and caring people.
 
-### 3 levels of failures
+### <a id="three-levels-of-failures"></a>3 levels of failures
 
 At different levels of life, each of us encounters signs of suboptimal balance in the world.
 
 **At the level of everyday life**, we notice imperfections in familiar, long-standing relationships:
 
-- Teachers in schools do not communicate with children in the best way, children at the same time have problems with academic performance. 
+- Teachers in schools do not communicate with children in the best way, children at the same time have problems with academic performance.
 - Supervisors and subordinates play a "power game" instead of working together ecologically and effectively and creating overall value.
 - Officials tend to give citizens the runaround without trying to solve their problems.
 - Customers, implementers, and business partners make promises they can not (or will not) keep.
@@ -57,9 +57,9 @@ At different levels of life, each of us encounters signs of suboptimal balance i
 
 
 > **Some of these issues become less important if you are young, live in a developed country, have the right gender, skin color, and sexual orientation. And a lot of money in your bank account.**
-> 
+>
 
-### The problem as it is
+### <a id="the-problem-as-it-is"></a>The problem as it is
 
 What is happening here is what we call the **problem of inadequate structures of social relationships**. It does not matter what their size and complexity, a significant portion of these structures are not optimal for human life and cause discomfort.
 
@@ -69,7 +69,7 @@ Some will scold teachers for not being competent and teaching their children poo
 Some want to change everything, but go to prison instead.
 
 
-### **Why did it happen?**
+### <a id="why-did-it-happen"></a>**Why did it happen?**
 
 We have reported on the reasons why the existing balance is disturbed in a separate article: "Escape from kindergarten". You can find it here.
 
@@ -79,7 +79,7 @@ In short:
 - People are fixated on solving everyday problems and do not see the bigger picture.
 
 
-### **Demand for decentralization of relations**
+### <a id="demand-for-decentralization-of-relations"></a>**Demand for decentralization of relations**
 
 No one knows for sure how to create new, better functioning public institutions.
 
@@ -90,7 +90,7 @@ However, when the initiative to decentralise comes from governments and the syst
 At the same time, **enthusiasts, open-minded people, and even whole communities are willing to experiment** with public relationships. Digital nomads, DAO and blockchain creators, Greta Thunberg's followers and other meaning innovators are offering their own vision of the world and testing approaches for themselves.
 
 > There are more than 100 million digital nomads in the world alone. They already generate an economic value of $700 billion, and development of remote working practices will dramatically increase the size of this market.
-> 
+>
 
 But both global citizens and change agents do not always find understandable forms of interaction in the existing legal framework. Consensus between them and government officials is still rare.
 
@@ -99,18 +99,18 @@ One of the limitations of decentralisation is that existing blockchain solutions
 Only a few crypto companies are able to bring decentralisation to the level of understanding of an ordinary citizen.
 
 
-### **The YourJustice Solution**
+### <a id="the-yourjustice-solution"></a>**The YourJustice Solution**
 
 We have invested several thousand hours to find a solution to the accumulated tensions between social relations, freedom and the need for change. We have found an interesting vector that we believe makes it possible to resolve these contradictions in the most elegant way.
 
 > We decided to create a constructor that allows people to independently form new social relationships in a clean legal environment and transfer existing relationships to the platform. All rules are recorded in a new blockchain form that is more suitable for everyday use than smart contracts.
-> 
+>
 
 The constructor is based on the YJML specification we created for public relationships, which due to its flexibility allows you to implement your plans while being understandable even for a schoolchild.
 
 The technical side of the platform will be discussed in more detail in the following chapters.
 
-### **A quick overview of the platform**
+### <a id="a-quick-overview-of-the-platform"></a>**A quick overview of the platform**
 
 The result is a decentralized social network customizable through an easy-to-learn language designed specifically to describe public relations. This is a direct embodiment of the Code is Codex principle.
 
@@ -127,7 +127,7 @@ Courts in different jurisdictions offer everyone the opportunity to get justice 
 
 We devoted the second and fifth chapters of the Whitepaper to a detailed description of the platform.
 
-### **Agents of changes (changemakers), that is, you**
+### <a id="agents-of-changes-that-is-you"></a>**Agents of changes (changemakers), that is, you**
 
 To change humanity, one platform is not enough. We need leaders and community representatives who want change. Those who are ready:
 
@@ -138,12 +138,12 @@ In addition, there is a need to make the emerging relationships available for un
 
 Concrete examples of use cases (from contracts concluded on the platform to the description of constitutional relationships) are provided in the third chapter of the Whitepaper.
 
-### **What we expect and what we strive for**
+### <a id="what-we-expect-and-what-we-strive-for"></a>**What we expect and what we strive for**
 
 **We expect** the emergence of a large number of sovereign communities that will discuss and describe their relationships, public services, laws and value systems. They will begin to evaluate each other and resolve conflicts in court. They will naturally build a self-sustaining economy in a decentralised environment integrated with existing blockchains.
 
 > Such communities will allow people to live by the rules they understand, believe in and agree with.
-> 
+>
 
 * **We expect** the emerging environment to be as understandable as possible for everyone: from legislators writing their proposals on the platform to schoolchildren whose socialisation is just beginning.
 * **We expect**that a common open-source platform will help the creators of change to join forces and shape not only the vision of a new equilibrium, but **the New Equilibrium itself, into reality**.

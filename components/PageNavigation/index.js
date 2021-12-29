@@ -7,7 +7,7 @@ import {Search} from 'components'
 
 import style from './index.module.scss'
 
-const OFFSET = -96
+const OFFSET = -70
 
 export default function PageNavigation({sidebar, search = false, side = 'right', nav, rootPath}) {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,16 +21,14 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
 
   const handleScroll = e => {
     e.preventDefault()
-    // console.log(router)
-    // const {pathname, query} = router
-    // const path = pathname.replace('[id]', query.id)
-    // const id = e.target.getAttribute('href').match(/#(.*)/)[1]
-    // const el = document.getElementById(id)
-    // const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset
-    // window.scrollTo({ top: yCoordinate + OFFSET, behavior: 'smooth' });
-    // console.log(path)
-    // window.location.hash = id
-    // router.push(path, path + '#' + id, {scroll: false})
+    const hash = e.target.getAttribute('data-id')
+    const elem = document.getElementById(hash)
+    const coord = elem.getBoundingClientRect().top + window.pageYOffset
+    history.replaceState(null, null, `#${hash}`)
+    window.scrollTo({
+      top: coord,
+      behavior: 'smooth'
+    })
   }
 
   useEffect(() => {
@@ -72,15 +70,10 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
         {search && <Search />}
         <p>On this page</p>
         <ul>
-          {nav.map((anchor, i) => <li key={anchor.id + i}>
-            <Link href={{
-              pathname: rootPath,
-              hash: anchor.id
-            }}>
-              <a className={active === anchor.id ? style.active : ''}>
-                {anchor.innerText}
-              </a>
-            </Link>
+          {nav.map((anchor, i) => <li key={`sdxmc230cc-1c32` + i}>
+            <a className={active === anchor.id ? style.active : ''} data-id={anchor.id} onClick={handleScroll}>
+              {anchor.text}
+            </a>
           </li>)}
         </ul>
       </div>

@@ -11,7 +11,8 @@
 }
 
 .container {
-  padding: 126px 0 24px;
+  // padding: 126px 0 24px;
+  padding: 24px 0;
   max-width: 1255px;
   width: 100%;
 
@@ -168,13 +169,13 @@
 }
 
 .copy {
-  padding-top: 6px;
+  // padding-top: 6px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: solid 1px rgba(206, 219, 239, 1);
+  // border-top: solid 1px rgba(206, 219, 239, 1);
   position: relative;
 
   &Links {

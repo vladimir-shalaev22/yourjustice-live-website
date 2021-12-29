@@ -4,6 +4,25 @@ import {useRouter} from 'next/router'
 
 import style from './index.module.scss'
 
+const languages = [
+  {
+    id: 'ru',
+    text: 'Русский'
+  },
+  {
+    id: 'en',
+    text: 'English'
+  },
+  // {
+  //   id: 'ko',
+  //   text: '한국인'
+  // },
+  // {
+  //   id: 'tr',
+  //   text: 'Türk'
+  // }
+]
+
 export default function Language({setLang, top = false}) {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef()
@@ -40,18 +59,11 @@ export default function Language({setLang, top = false}) {
     <div className={style.wrapper} ref={dropdownRef}>
       <button className={style.current} onClick={handleOpen}><img src={`/assets/images/${locale}.png`} alt="Current lang" /></button>
       <ul className={`${style.list} ${isOpen ? style.opened : ''} ${top ? style.top : ''}`}>
-        <li>
-          <button onClick={handleClick} lang="ru"><img src="/assets/images/ru.png" alt="Russian" /><span>Русский</span></button>
-        </li>
-        <li>
-          <button onClick={handleClick} lang="en"><img src="/assets/images/en.png" alt="English" /><span>English</span></button>
-        </li>
-        <li>
-          <button onClick={handleClick} lang="ko"><img src="/assets/images/ko.png" alt="Korean" /><span>한국인</span></button>
-        </li>
-        <li>
-          <button onClick={handleClick} lang="tr"><img src="/assets/images/tr.png" alt="Turkish" /><span>Türk</span></button>
-        </li>
+        {languages.map(lang => <li key={lang.id}>
+          <button onClick={handleClick} lang={lang.id}><img src={`/assets/images/${lang.id}.png`} alt={lang.text} />
+            <span>{lang.text}</span>
+          </button>
+        </li>)}
       </ul>
     </div>
   )

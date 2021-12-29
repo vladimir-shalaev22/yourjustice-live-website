@@ -189,6 +189,22 @@
   }
 
   ul {
+    height: min(500px, 70vh);
+    overflow: auto;
+    padding-left: 16px;
+    margin-left: -16px;
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(206, 219, 239, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(206, 219, 239, 0.7);
+    }
+
     li {
 
       ul {

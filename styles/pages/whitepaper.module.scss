@@ -6,10 +6,10 @@
   display: -ms-flex;
   display: flex;
   justify-content: center;
-  padding: 57px 27px 156px;
+  padding: 110px 27px 156px;
 
   @include respond-to(sm) {
-    padding: 42px 18px 120px;
+    padding: 90px 18px 120px;
   }
 }
 
