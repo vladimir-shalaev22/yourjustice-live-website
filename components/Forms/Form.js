@@ -97,8 +97,8 @@ export default function Form({ type = 'developers', isOpen = false }) {
         <span>{formTranslation.success.text[locale]}</span>
       </div>
       <div className={`${style.sending} ${status === 'sending' ? style.visible : ''}`}>
-        <div class={style.spinner}>
-          <div class={style.spinnerBlock}>
+        <div className={style.spinner}>
+          <div className={style.spinnerBlock}>
             <div></div><div><div></div></div>
           </div>
         </div>
