@@ -10,6 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 8px;
+    background: linear-gradient(189.67deg, #FFA3B5 -7.44%, #9975E7 111.26%)
+  }
 }
 
 code {

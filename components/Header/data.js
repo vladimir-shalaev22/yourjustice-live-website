@@ -7,7 +7,7 @@ export const data = {
         tr: 'Görüş',
         ko: '비전'
       },
-      link: '/#vision'
+      link: 'vision'
     },
     {
       text: {
@@ -16,7 +16,7 @@ export const data = {
         tr: 'Ekosistem',
         ko: '생태계'
       },
-      link: '/#ecosystem'
+      link: 'ecosystem'
     },
     {
       text: {
@@ -25,7 +25,7 @@ export const data = {
         tr: 'Denge',
         ko: '평형'
       },
-      link: '/#equilibrium'
+      link: 'equilibrium'
     },
     {
       text: {
@@ -34,7 +34,7 @@ export const data = {
         tr: 'Takım',
         ko: '팀'
       },
-      link: '/#team'
+      link: 'team'
     },
     {
       text: {
@@ -43,16 +43,16 @@ export const data = {
         tr: 'Bize katıl',
         ko: '우리와 함께하십시오'
       },
-      link: '/#joinus'
+      link: 'join-us'
     },
-    {
-      text: {
-        en: 'Contacts',
-        ru: 'Контакты',
-        tr: 'İletişim',
-        ko: '콘택트 렌즈'
-      },
-      link: '/#contacts'
-    }
+    // {
+    //   text: {
+    //     en: 'Contacts',
+    //     ru: 'Контакты',
+    //     tr: 'İletişim',
+    //     ko: '콘택트 렌즈'
+    //   },
+    //   link: 'contacts'
+    // }
   ]
 }

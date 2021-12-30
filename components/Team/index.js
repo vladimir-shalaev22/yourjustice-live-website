@@ -19,7 +19,8 @@ export default function Team() {
   }, [])
 
   return (
-    <div className={style.wrapper} id="team">
+    <div className={style.wrapper}>
+      <a id="team" className={style.anchor}></a>
       <div className={style.container}>
         <div className={style.header}>
           <h2>{header.title[locale]}</h2>

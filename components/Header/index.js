@@ -18,11 +18,16 @@ export default function Header({lang, setLang}) {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const handleScroll = el => {
-    // const offset = el.getAttribute('offset') || -72
-    // const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset
-    // window.scrollTo({ top: yCoordinate + offset, behavior: 'smooth' })
-    // setIsMenuOpen(false)
+  const handleScroll = e => {
+    e.preventDefault()
+    const id = e.target.getAttribute('data-id')
+    const elem = document.getElementById(id)
+    const coord = elem.getBoundingClientRect().top + window.pageYOffset
+    history.replaceState(null, null, `#${id}`)
+    window.scrollTo({
+      top: coord,
+      behavior: 'smooth'
+    })
   }
 
   return <header className={style.header}>
@@ -34,7 +39,7 @@ export default function Header({lang, setLang}) {
       </Link>
       <ul className={style.links}>
         {links.map((link, i) => <li key={`23c322p11kc1` + i}>
-          <Link href={link.link}>{link.text[locale]}</Link>
+          <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
         </li>)}
       </ul>
       <div className={style.languages}>
@@ -52,7 +57,7 @@ export default function Header({lang, setLang}) {
           </div>
           <ul>
             {links.map((link, i) => <li key={`23c322p11kc1` + i}>
-              <Link href={link.link}>{link.text[locale]}</Link>
+              <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
             </li>)}
           </ul>
         </div>

@@ -13,6 +13,8 @@
   display: inline-block;
   border-radius: 30px;
   cursor: pointer;
+  background: linear-gradient(99.67deg, rgba(255, 103, 133, 0) -7.44%, rgba(116, 76, 204, 0) 111.26%);
+  transition: background 0.2s ease;
 
   span {
     @include text-gradient(to right, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
@@ -50,7 +52,7 @@
   }
 
   &:hover {
-    background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+    background: linear-gradient(99.67deg, rgba(255, 103, 133, 1) -7.44%, rgba(116, 76, 204, 1) 111.26%);
 
     &:before {
       background: linear-gradient(102.02deg, rgba(204, 123, 139, 0) -10.08%, rgba(117, 88, 180, 0) 78.68%);

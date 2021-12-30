@@ -19,6 +19,14 @@
   }
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -102px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .header {
   margin-bottom: 64px;
 

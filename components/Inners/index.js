@@ -28,7 +28,7 @@ export default function Inners() {
             {li[locale]}
           </li>)}
         </ul>
-        <Button type='link' to={section.button.link} className={style.button}>{section.button.text[locale]}</Button>
+        {/* <Button type='link' to={section.button.link} className={style.button}>{section.button.text[locale]}</Button> */}
       </div>)}
     </div>
   </div>
