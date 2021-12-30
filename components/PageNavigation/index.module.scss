@@ -59,6 +59,11 @@
     }
 
     ul {
+
+      padding-left: 0;
+      margin-left: 0;
+      padding-right: 16px;
+      margin-right: -16px;
       ul {
         a.active {
           &:before {
@@ -190,9 +195,10 @@
 
   ul {
     height: min(500px, 70vh);
-    overflow: auto;
+    overflow-y: auto;
     padding-left: 16px;
     margin-left: -16px;
+    
     &::-webkit-scrollbar {
       width: 8px;
     }
