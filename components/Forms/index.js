@@ -59,7 +59,8 @@ export default function Forms() {
   }, [isMobile])
 
   return (
-    <div className={style.wrapper} id="joinus">
+    <div className={style.wrapper}>
+      <a id="join-us" className={style.anchor}></a>
       <div className={style.container}>
         <div className={style.header}>
           <h2>{header.title[locale]}</h2>

@@ -9,7 +9,8 @@ export default function Comparison() {
   const {locale} = useRouter()
   const {header, table} = data
 
-  return <div className={style.wrapper} id="equilibrium">
+  return <div className={style.wrapper}>
+    <a id="equilibrium" className={style.anchor}></a>
     <div className={style.header}>
       <h2>{header.title[locale]}</h2>
       <p>{header.text[locale]}</p>

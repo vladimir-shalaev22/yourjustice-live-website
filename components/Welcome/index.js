@@ -12,7 +12,8 @@ export default function Welcome() {
   const {locale} = useRouter()
   const {title, text, buttons} = data
 
-  return <div className={style.welcome} id="vision">
+  return <div className={style.welcome}>
+    <a id="vision" className={style.anchor}></a>
     <h2 dangerouslySetInnerHTML={{ __html: title[locale] }}></h2>
     <p dangerouslySetInnerHTML={{ __html: text[locale] }}></p>
     <ul>

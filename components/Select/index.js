@@ -25,7 +25,8 @@ export default function Select({defaultValue = '', name, value = '', children, o
   }
 
   const handleChange = e => {
-    onChange(e)
+    const value = e.target.getAttribute('value')
+    onChange({target: {value, name}})
     setIsOpen(false)
   }
 
@@ -33,11 +34,11 @@ export default function Select({defaultValue = '', name, value = '', children, o
     <div ref={selectRef} className={`${style.wrapper} ${error ? style.error : ''} ${isOpen ? style.open : ''}`}>
       <p className={style.current} onClick={handleOpen}>{value ? value : <span>{defaultValue}</span>}</p>
       <div>
-        <span name={name} value="1" onClick={handleChange}>1</span>
-        <span name={name} value="2" onClick={handleChange}>2</span>
-        <span name={name} value="3" onClick={handleChange}>3</span>
-        <span name={name} value="4" onClick={handleChange}>4</span>
-        <span name={name} value="5" onClick={handleChange}>5</span>
+        <span value="1" onClick={handleChange}>1</span>
+        <span value="2" onClick={handleChange}>2</span>
+        <span value="3" onClick={handleChange}>3</span>
+        <span value="4" onClick={handleChange}>4</span>
+        <span value="5" onClick={handleChange}>5</span>
       </div>
       <span className={style.errorText}>{errorText}</span>
     </div>

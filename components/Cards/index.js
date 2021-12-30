@@ -10,7 +10,8 @@ import {data} from './data'
 export default function Cards() {
   const {locale} = useRouter()
   const {cards, tags} = data
-  return <div className={style.cards} id="ecosystem">
+  return <div className={style.cards}>
+    <a id="ecosystem" className={style.anchor}></a>
     <div className={style.cardsContainer}>
       <div className={style.cardsContent}>
         {cards.map((card, i) => <div key={`sjcowncxm2mc` + i} className={card.double ? style.card2x : style.card}>
@@ -20,7 +21,7 @@ export default function Cards() {
           <div>
             <h3>{card.title[locale]}</h3>
             <p dangerouslySetInnerHTML={{ __html: card.text[locale]}}></p>
-            <Button type='link' to={card.button.link} className={style.button}>{card.button[locale]}</Button>
+            {/* <Button type='link' to={card.button.link} className={style.button}>{card.button[locale]}</Button> */}
           </div>
         </div>)}
       </div>

@@ -53,7 +53,7 @@ export const data = {
         link: '/article/jurisdictions',
         text: {
           en: 'Learn More',
-          ru: '더 알아보세요',
+          ru: 'Выучить больше',
           tr: 'Daha fazla bilgi edinin',
           ko: '더 알아보세요'
         }
