@@ -13,7 +13,7 @@ export default function HomeBanner({language}) {
   return <div className={style.banner}>
     <div className={style.bannerContainer}>
       <div className={style.bannerContent}>
-        <h2>YourJustice.live</h2>
+        <h2>YourJustice.life</h2>
         <p>{data[locale].text}</p>
         <Button type="link" to="/whitepaper" className={style.button}>WhitePaper</Button>
       </div>

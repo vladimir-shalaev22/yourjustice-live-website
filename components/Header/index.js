@@ -29,7 +29,7 @@ export default function Header({lang, setLang}) {
     <div className={style.headerContainer}>
       <Link href="/">
         <a className={style.toHome}>
-          YourJustice.live
+          YourJustice.life
         </a>
       </Link>
       <ul className={style.links}>
