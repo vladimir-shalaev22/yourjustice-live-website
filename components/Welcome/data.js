@@ -22,8 +22,8 @@ export const data = {
     {
       fill: true,
       link: '/article/equilibrium-is-broken',
-      en: 'Create a jurisdiction',
-      ru: 'Создать юрисдикцию',
+      en: 'Equilibrium is broken',
+      ru: 'Равновесие нарушено',
       ko: '관할 구역 만들기',
       tr: 'Bir yetki alanı oluşturun'
     }
