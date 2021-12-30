@@ -94,15 +94,6 @@ export const data = {
           tr: 'Gizlilik Politikası',
           ko: '개인 정보 정책'
         }
-      },
-      {
-        link: '/disclaimer',
-        text: {
-          en: 'Legal Disclaimer',
-          ru: 'Отказ от ответственности',
-          tr: 'Çerez politikası',
-          ko: '쿠키 정책'
-        }
       }
     ]
   }

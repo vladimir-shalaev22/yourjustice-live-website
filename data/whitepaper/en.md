@@ -1,5 +1,22 @@
 # <a id="yourjustice-whitepaper"></a>YourJustice WhitePaper
 
+<details>
+  <summary>Legal disclaimer</summary>
+<br>
+The sole purpose of this White Paper is to outline the objectives and proposed architecture of YourJustice to those, who may be interested.
+
+This White Paper and its contents do not, and are not intended to, constitute, or form any part of, an offer for sale, prospectus or invitation to subscribe for or purchase Tokens. Nothing in White Paper can be considered as “investment advice” for any purpose. If and when YourJustice proceeds with offering for sale and subscription its Tokens, it will do so through definitive sale and subscription documents.
+
+Nothing in this White Paper should be read as a promise of how YourJustice business will develop or of the utility or value of its Tokens. This White Paper outlines current plans, which could change for any number of reasons at the discretion of the board of directors of YourJustice. The ongoing development and maintenance of the YourJustice Platform may be abandoned and/or materially modified for a number of reasons, including, but not limited to, lack of interest from the public, lack of funding, lack of commercial success or prospects, or departure of key personnel.
+
+The industry in which YourJustice operates is new and the regulatory status of organisations such as YourJustice, blockchain technology and Tokens is unsettled in many jurisdictions. It is therefore difficult to predict how or whether governmental authorities may regulate YourJustice, the YourJustice Platform and the Tokens. YourJustice may therefore cease the development and any of the activities of the YourJustice Platform in the event that governmental actions make it unlawful or commercially undesirable to continue to do so.
+
+Statements contained in the White Paper may constitute “forward-looking statements”. Forward-looking statements are generally identifiable by the use of the words “may”, “will”, “should”, “plan”, “expect”, “anticipate”, “estimate”, “believe”, “intend”, “project”, “goal” or “target” or the negative of these words or other variations on these words or comparable terminology. Forward-looking statements are based on current expectations and involve a number of known and unknown risks, uncertainties and other factors that could cause the actual performance of YourJustice to be materially different from any future performance expressed or implied by such forward-looking statements.
+
+You should not place undue reliance on forward-looking statements and no undertaking is given to publicly update or revise any forward-looking statements that may be made herein, whether as a result of new information, future events or otherwise.
+</details>
+<br>
+
 ### <a id="an-abstract"></a>An Abstract
 
 YourJustice is a decentralized social network for people, communities, organizations, and countries. Here, anyone can create a jurisdiction with their own values, rules, laws, and economies, or join an existing one.
@@ -69,7 +86,7 @@ Some will scold teachers for not being competent and teaching their children poo
 Some want to change everything, but go to prison instead.
 
 
-### <a id="why-did-it-happen"></a>**Why did it happen?**
+### <a id="why-did-it-happen"></a>Why did it happen?
 
 We have reported on the reasons why the existing balance is disturbed in a separate article: "Escape from kindergarten". You can find it here.
 
@@ -79,7 +96,7 @@ In short:
 - People are fixated on solving everyday problems and do not see the bigger picture.
 
 
-### <a id="demand-for-decentralization-of-relations"></a>**Demand for decentralization of relations**
+### <a id="demand-for-decentralization-of-relations"></a>Demand for decentralization of relations
 
 No one knows for sure how to create new, better functioning public institutions.
 
@@ -99,7 +116,7 @@ One of the limitations of decentralisation is that existing blockchain solutions
 Only a few crypto companies are able to bring decentralisation to the level of understanding of an ordinary citizen.
 
 
-### <a id="the-yourjustice-solution"></a>**The YourJustice Solution**
+### <a id="the-yourjustice-solution"></a>The YourJustice Solution
 
 We have invested several thousand hours to find a solution to the accumulated tensions between social relations, freedom and the need for change. We have found an interesting vector that we believe makes it possible to resolve these contradictions in the most elegant way.
 
@@ -110,7 +127,7 @@ The constructor is based on the YJML specification we created for public relatio
 
 The technical side of the platform will be discussed in more detail in the following chapters.
 
-### <a id="a-quick-overview-of-the-platform"></a>**A quick overview of the platform**
+### <a id="a-quick-overview-of-the-platform"></a>A quick overview of the platform
 
 The result is a decentralized social network customizable through an easy-to-learn language designed specifically to describe public relations. This is a direct embodiment of the Code is Codex principle.
 
@@ -127,7 +144,7 @@ Courts in different jurisdictions offer everyone the opportunity to get justice 
 
 We devoted the second and fifth chapters of the Whitepaper to a detailed description of the platform.
 
-### <a id="agents-of-changes-that-is-you"></a>**Agents of changes (changemakers), that is, you**
+### <a id="agents-of-changes-that-is-you"></a>Agents of changes (changemakers), that is, you
 
 To change humanity, one platform is not enough. We need leaders and community representatives who want change. Those who are ready:
 
@@ -138,7 +155,7 @@ In addition, there is a need to make the emerging relationships available for un
 
 Concrete examples of use cases (from contracts concluded on the platform to the description of constitutional relationships) are provided in the third chapter of the Whitepaper.
 
-### <a id="what-we-expect-and-what-we-strive-for"></a>**What we expect and what we strive for**
+### <a id="what-we-expect-and-what-we-strive-for"></a>What we expect and what we strive for
 
 **We expect** the emergence of a large number of sovereign communities that will discuss and describe their relationships, public services, laws and value systems. They will begin to evaluate each other and resolve conflicts in court. They will naturally build a self-sustaining economy in a decentralised environment integrated with existing blockchains.
 

@@ -1,14 +1,28 @@
 # YourJustice WhitePaper
 
-<Paragraph className="subtitle">*Мы строим мост справедливости в более справедливый мир. Присоединяйтесь к проекту, меняющему правила игры, и создайте суверенитет и свободу для человечества.*</Paragraph>
+<details>
+  <summary>Legal disclaimer</summary>
+<br>
+The sole purpose of this White Paper is to outline the objectives and proposed architecture of YourJustice to those, who may be interested.
 
-## <a id="p1"></a>Chapter 1 - Проблема и концептуальное решение
+This White Paper and its contents do not, and are not intended to, constitute, or form any part of, an offer for sale, prospectus or invitation to subscribe for or purchase Tokens. Nothing in White Paper can be considered as “investment advice” for any purpose. If and when YourJustice proceeds with offering for sale and subscription its Tokens, it will do so through definitive sale and subscription documents.
+
+Nothing in this White Paper should be read as a promise of how YourJustice business will develop or of the utility or value of its Tokens. This White Paper outlines current plans, which could change for any number of reasons at the discretion of the board of directors of YourJustice. The ongoing development and maintenance of the YourJustice Platform may be abandoned and/or materially modified for a number of reasons, including, but not limited to, lack of interest from the public, lack of funding, lack of commercial success or prospects, or departure of key personnel.
+
+The industry in which YourJustice operates is new and the regulatory status of organisations such as YourJustice, blockchain technology and Tokens is unsettled in many jurisdictions. It is therefore difficult to predict how or whether governmental authorities may regulate YourJustice, the YourJustice Platform and the Tokens. YourJustice may therefore cease the development and any of the activities of the YourJustice Platform in the event that governmental actions make it unlawful or commercially undesirable to continue to do so.
+
+Statements contained in the White Paper may constitute “forward-looking statements”. Forward-looking statements are generally identifiable by the use of the words “may”, “will”, “should”, “plan”, “expect”, “anticipate”, “estimate”, “believe”, “intend”, “project”, “goal” or “target” or the negative of these words or other variations on these words or comparable terminology. Forward-looking statements are based on current expectations and involve a number of known and unknown risks, uncertainties and other factors that could cause the actual performance of YourJustice to be materially different from any future performance expressed or implied by such forward-looking statements.
+
+You should not place undue reliance on forward-looking statements and no undertaking is given to publicly update or revise any forward-looking statements that may be made herein, whether as a result of new information, future events or otherwise.
+</details>
+
+## <a id="problem-and-conceptual-solution"></a>Chapter 1 - Проблема и концептуальное решение
 
 <Paragraph className="subtitle">В стартовой главе мы обозначим боли существующего равновесия и предложим наше видение возможных решений.</Paragraph>
 
 **Коротко**: На фоне прыжка технологий мир испытывает кризис общественных отношений. Спрос на децентрализацию растет. Мы работаем над конструктором, который позволяет создавать общественные отношения в чистом правовом поле. Мы рассчитываем, что платформа поможет человечеству стать более безопасной и справедливой средой. Для того, чтобы все получилось, нужна помощь “агентов изменений” - активных и неравнодушных людей.
 
-### <a id="p2"></a>3 уровня сбоев
+### <a id="three-levels-of-failures"></a>3 уровня сбоев
 
 На разных уровнях жизни каждый из нас встречается с признаками неоптимальности равновесия, сложившегося в мире.
 
@@ -41,7 +55,7 @@
 > **Часть этих проблем становится менее значимой, если вы молоды, живете в развитой стране, у вас *правильный* гендер, цвет кожи и сексуальная ориентация. И много денег на счету.**
 >
 
-### <a id="p3"></a>The problem as it is
+### <a id="the-problem-as-it-is"></a>The problem as it is
 
 Происходящее мы называем **проблемой неподходящих структур общественных отношений**. Не важно, какого они размера и сложности - значительная часть этих структур не оптимальна для жизни человека и вызывает дискомфорт.
 
@@ -51,7 +65,7 @@
 
 Кто-то захочет все изменить, но попадет в тюрьму.
 
-### <a id="p4"></a>**Почему так произошло?**
+### <a id="why-did-it-happen"></a>Почему так произошло?
 
 Рассуждения о причинах, из-за которых существующее равновесие сломано, мы вынесли в отдельную статью - “Побег из детского сада”. Вы можете найти ее по ссылке.
 
@@ -61,7 +75,7 @@
 - Эксперименты с формами общественных отношений чрезвычайно дороги и сложны, часто заканчиваются неудачами. Все помнят, что случилось с СССР.
 - Замкнувшись на решении каждодневных проблем, люди не видят глобальную картину.
 
-### <a id="p5"></a>**Спрос на децентрализацию отношений**
+### <a id="demand-for-decentralization-of-relations"></a>Спрос на децентрализацию отношений
 
 Никто не знает наверняка, как гарантированно создать новые, более качественно работающие общественные институты.
 
@@ -80,7 +94,7 @@
 
 Лишь единичные криптокомпании способны вывести децентрализацию на уровень понимания обычного человека.
 
-### <a id="p6"></a>**Решение YourJustice**
+### <a id="the-yourjustice-solution"></a>Решение YourJustice
 
 Мы вложили несколько тысяч часов, чтобы придумать решение для накопившихся противоречий между социальными отношениями, свободой и необходимостью изменений. Мы обнаружили интересный вектор, который, с нашей точки зрения, позволяет разрешить эти противоречия в наиболее элегантной форме .
 
@@ -91,7 +105,7 @@
 
 Подробнее о технической стороне платформы будет рассказано в следующих главах.
 
-### <a id="p7"></a>**Быстрый обзор платформы**
+### <a id="a-quick-overview-of-the-platform"></a>Быстрый обзор платформы
 
 В итоге у нас получается децентрализованная социальная сеть, настраиваемая через легкий в освоении язык, созданный специально для описания общественных отношений. Это прямое воплощение принципа Code is Codex.
 
@@ -108,7 +122,7 @@
 
 Детальному описанию платформы мы посвятили вторую и пятую главу вайтпейпера.
 
-### <a id="p8"></a>**Агенты изменений (Changemakers). То есть, вы**
+### <a id="agents-of-changes-that-is-you"></a>Агенты изменений (Changemakers). То есть, вы
 
 Чтобы человечество изменилось, одной платформы мало. Нужны лидеры и представители сообществ, которые хотят перемен. Те, кто готов:
 
@@ -119,7 +133,7 @@
 
 Конкретные примеры юзкейсов (от контракта, заключенного на платформе, и до описания конституционных отношений) будут приведены в третьей главе вайтпейпера.
 
-### <a id="p9"></a>**Что мы ожидаем и к чему стремимся**
+### <a id="what-we-expect-and-what-we-strive-for"></a>Что мы ожидаем и к чему стремимся
 
 **Мы ожидаем** возникновения большого количества суверенных сообществ, которые будут обсуждать и описывать свои взаимоотношения, общественные услуги, законы и системы ценностей. Они начнут выдавать друг другу рейтинги и разрешать конфликты в судах. Разумеется, они построят самостоятельную экономику в децентрализованной среде, интегрированной с существующими блокчейнами.
 
