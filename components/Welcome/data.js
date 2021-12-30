@@ -21,7 +21,7 @@ export const data = {
     },
     {
       fill: true,
-      link: '/answers/smart-contracts',
+      link: '/article/equilibrium-is-broken',
       en: 'Create a jurisdiction',
       ru: 'Создать юрисдикцию',
       ko: '관할 구역 만들기',
