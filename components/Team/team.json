@@ -84,11 +84,6 @@
       "head": "Team",
       "members": [
         {
-          "name": "Daniel Goebel",
-          "ava": "/assets/images/Daniel-goebel.png",
-          "position": "Digital Nation<br/>Ambassador & Advisor"
-        },
-        {
           "name": "Ladislas",
           "ava": "/assets/images/ladislas.png",
           "position": "Art-Director"
@@ -101,22 +96,12 @@
         {
           "name": "Gleb Sovin",
           "ava": "/assets/images/glev-sovin.png",
-          "position": "Designer"
-        },
-        {
-          "name": "Oleg Korzhanov",
-          "ava": "/assets/images/oleg-korzhanov.png",
-          "position": "Backend"
+          "position": "UI/UX designer"
         },
         {
           "name": "Ksenia Matveeva",
           "ava": "/assets/images/ksenia-matveeva.png",
           "position": "Lawyer"
-        },
-        {
-          "name": "Dmitriy",
-          "ava": "/assets/images/team-ava-template.svg",
-          "position": "Backend"
         },
         {
           "name": "Gleb Kachalkin",
@@ -132,6 +117,33 @@
           "name": "Maksym Dermenzhy",
           "ava": "/assets/images/maksym-dermenzhy.png",
           "position": "Assistant"
+        },
+        {
+          "name": "Vadim Alexeev",
+          "ava": "/assets/images/vadim-alexeev.png"
+        },
+        {
+          "name": "Anton Petrov",
+          "ava": "/assets/images/team-ava-template.svg"
+        },
+        {
+          "name": "Alex Shumigay",
+          "ava": "/assets/images/alex-shumigay.png",
+          "position": "Archivarius"
+        },
+        {
+          "name": "Dmitriy",
+          "ava": "/assets/images/team-ava-template.svg",
+          "position": "Node JS Developer"
+        },
+        {
+          "name": "Oleg Korzhanov",
+          "ava": "/assets/images/oleg-korzhanov.png",
+          "position": "Node JS Developer"
+        },
+        {
+          "name": "Andrey Voronkov",
+          "ava": "/assets/images/andrey-voronkov.png"
         }
       ]
     },
@@ -149,23 +161,16 @@
         {
           "name": "Danila Medvedev",
           "ava": "/assets/images/danila-medvedev.png"
-        },
+        }
+      ]
+    },
+    {
+      "head": "Ambassadors",
+      "members": [
         {
-          "name": "Andrey Voronkov",
-          "ava": "/assets/images/andrey-voronkov.png"
-        },
-        {
-          "name": "Vadim Alexeev",
-          "ava": "/assets/images/vadim-alexeev.png"
-        },
-        {
-          "name": "Anton Petrov",
-          "ava": "/assets/images/team-ava-template.svg"
-        },
-        {
-          "name": "Alex Shumigay",
-          "ava": "/assets/images/alex-shumigay.png",
-          "position": "Archivarius"
+          "name": "Daniel Goebel",
+          "ava": "/assets/images/Daniel-goebel.png",
+          "position": "Digital Nation<br/>Ambassador & Advisor"
         }
       ]
     }
