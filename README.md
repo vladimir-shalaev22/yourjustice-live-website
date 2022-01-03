@@ -2,11 +2,11 @@
    <p>👋 Welcome to YourJustice!</p>
 </h1>
 
-This is the repo for the [yourjustice.life](https://www.yourjustice.life/) website, and we want it to be the best resource for YourJustice community (except YourJustice itself). 
+This is the repo for the [yourjustice.life](https://www.yourjustice.life/) website, and we want it to be the best resource for YourJustice community (except YourJustice itself).
 
 This website can be improved and changed by the contribution of community members, who add content, provide feedback, help this website to work.
 
-YourJustice code is not yet published to OpenSource, but we would do it as soon as we are ready. 
+YourJustice code is not yet published to OpenSource, but we would do it as soon as we are ready.
 
 ## So welcome and let’s make justice great again!
 
@@ -38,8 +38,6 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```
-$ git clone git@github.com:[your_github_handle]/ethereum-org-website.git && cd ethereum-org-website
-
 $ git clone git@github.com:YourJustice-Live/yourjustice-live-website.git && cd yourjustice-live-website
 ```
 
@@ -48,8 +46,6 @@ If you've already forked the repo, you'll want to ensure your fork is configured
 To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
 ```
-$ git remote add upstream https://github.com/ethereum/ethereum-org-website.git
-
 $ git remote add upstream https://github.com/YourJustice-Live/yourjustice-live-website.git
 ```
 
