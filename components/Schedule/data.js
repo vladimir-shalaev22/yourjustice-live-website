@@ -1,13 +1,13 @@
 export const data = {
   header: {
     title: {
-      en: 'For a long time, quickly go!',
+      en: 'Global roadmap',
       ru: 'Долгое время быстро иди!',
       tr: 'Uzun süredir hızlıca gidin!',
       ko: '오랫동안 빨리 가십시오!'
     },
     text: {
-      en: 'Whatever it takes to produce exponential growth',
+      en: 'Join us on a journey with exponential growth!',
       ru: 'Все, что нужно для получения экспоненциального роста',
       tr: 'Üstel büyüme üretmek için ne gerekiyorsa',
       ko: '기하 급수적 인 성장을 위해 필요한 것은 무엇이든간에'

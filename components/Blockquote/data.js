@@ -41,7 +41,7 @@ export const data = {
       ]
     },
     postscriptum: {
-      en: 'Let’s get here together!',
+      en: 'Justice rewired on blockchain!',
       ru: 'Давайте вместе!',
       ko: '여기로 함께 가자!',
       tr: 'Buraya birlikte gelelim!'

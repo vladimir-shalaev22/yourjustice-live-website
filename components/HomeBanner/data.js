@@ -1,6 +1,6 @@
 export const data = {
   en: {
-    text: 'Decentralized laws, justice and economics for digital tribes and sovereign individuals',
+    text: 'Decentralized laws, justice and economics for communities, states and sovereign individuals.',
     list: [
       'Current Version: Alpha 0.5.0 (Private)'
     ]

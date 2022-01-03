@@ -7,7 +7,7 @@ export const data = {
       ko: '우리와 함께하십시오!'
     },
     text: {
-      en: 'Share your thoughts and skills. We are open for fresh ideas and valuable contributors.',
+      en: 'We are open for your thoughts and efforts.',
       ru: 'Поделитесь своими мыслями и навыками. Мы открыты для свежих идей и ценных участников.',
       tr: 'Düşüncelerinizi ve becerilerinizi paylaşın. Taze fikirler ve değerli katılımcılara açıkız.',
       ko: '당신의 생각과 기술을 공유하십시오. 우리는 신선한 아이디어와 귀중한 기여자를 위해 열려 있습니다.'

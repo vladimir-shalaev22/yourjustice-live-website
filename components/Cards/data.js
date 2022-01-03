@@ -3,13 +3,13 @@ export const data = {
     {
       image: '/assets/images/card-1.png',
       title: {
-        en: 'Communities & Tribes',
+        en: 'Communities',
         ru: 'Сообщества и племена',
         ko: '커뮤니티 및 부족',
         tr: 'Topluluklar ve Kabileler'
       },
       text: {
-        en: 'Create a jurisdiction, onboard your community and become sovereign. Find humans with common values and grow the tribe!',
+        en: 'Grow your community by attracting humans with common values. Describe your identity, purpose and governance  and create a jurisdiction. Build tokenomics.',
         ru: 'Создайте юрисдикцию, включите свое сообщество и станьте суверенным. Найдите людей с общими ценностями и вырастите племя!',
         ko: '관할 구역을 만들고 커뮤니티에 가입하여 주권자가 되십시오. 공통의 가치를 지닌 인간을 찾아 종족을 성장시키세요!',
         tr: 'Bir yetki alanı oluşturun, topluluğunuzda yer alın ve egemen olun. Ortak değerlere sahip insanları bulun ve kabileyi büyütün!'

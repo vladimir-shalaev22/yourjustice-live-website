@@ -18,7 +18,7 @@ export const data = {
       className: 'sectionFirst',
       image: '/assets/images/inner-1.png',
       title: {
-        en: 'Jurisdictions built on your own Values',
+        en: 'Fast online justice',
         ru: 'Юрисдикции, основанные на ваших ценностях',
         tr: 'Kendi Değerleriniz üzerine inşa edilmiş yetki alanları',
         ko: '자신의 가치에 기반한 관할권'
