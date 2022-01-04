@@ -60,20 +60,7 @@ $ git merge upstream/dev
 3. Install dependencies
 
 ```
-$ yarn +install??
-```
-
-4. Add Mail SendGrid API token (free)
-
-To send letters you need to setup enviroment.
-
-> - In local repo root directory: Make a copy of `.env.example` and name it `.env`
-> - Copy & paste your new GitHub API token into `.env`
-
-```
-// .env
-SENDGRID_API_KEY
-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
+$ yarn install
 ```
 
 ### Make awesome changes!
