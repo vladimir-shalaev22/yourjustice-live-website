@@ -12,24 +12,24 @@ const initialForm = {
   developers: {
     name: '',
     email: '',
-    country: '',
-    business: '',
-    skills: '',
+    // country: '',
+    // business: '',
+    // skills: '',
     about: '',
     interests: '',
   },
   investors: {
     name: '',
     email: '',
-    country: '',
-    business: '',
+    // country: '',
+    // business: '',
     about: '',
   },
   lawyers: {
     name: '',
     email: '',
-    country: '',
-    business: '',
+    // country: '',
+    // business: '',
     about: '',
   },
 }
@@ -37,24 +37,24 @@ const initialError = {
   developers: {
     name: false,
     email: false,
-    country: false,
-    business: false,
-    skills: false,
+    // country: false,
+    // business: false,
+    // skills: false,
     about: false,
     interests: false,
   },
   investors: {
     name: false,
     email: false,
-    country: false,
-    business: false,
+    // country: false,
+    // business: false,
     about: false,
   },
   lawyers: {
     name: false,
     email: false,
-    country: false,
-    business: false,
+    // country: false,
+    // business: false,
     about: false,
   },
 }
@@ -133,23 +133,23 @@ export default function Form({ type = 'developers', isOpen = false }) {
             {formTranslation.email.error[locale]}
           </span>
         </div>
-        <Select
+        {/* <Select
           defaultValue={formTranslation.name.placeholder[locale]}
           name="country"
           value={fields.country}
           onChange={handleChange}
           error={errors.country}
           errorText={formTranslation.country.error[locale]}
-        />
-        <Select
+          />
+          <Select
           defaultValue={formTranslation.business.placeholder[locale]}
           name="business"
           value={fields.business}
           onChange={handleChange}
           error={errors.business}
           errorText={formTranslation.business.error[locale]}
-        />
-        {type === 'developers' && (
+          />
+          {type === 'developers' && (
           <Select
             defaultValue={formTranslation.skills.placeholder[locale]}
             name="skills"
@@ -158,7 +158,7 @@ export default function Form({ type = 'developers', isOpen = false }) {
             error={errors.skills}
             errorText={formTranslation.skills.error[locale]}
           />
-        )}
+        )} */}
         <div
           className={`${style.textareaWrapper} ${
                 errors.about ? style.error : ''

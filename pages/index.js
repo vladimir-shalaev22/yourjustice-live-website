@@ -1,6 +1,6 @@
 import {
   HomeBanner, Welcome, Cards, Blockquote,
-  Inners, Comparison, Schedule, Team, Forms
+  Inners, Equilibrium, Schedule, Team, Forms
 } from 'components'
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
     <Cards />
     <Blockquote />
     <Inners />
-    <Comparison />
+    <Equilibrium />
     <Schedule />
     <Team />
     <Forms />
