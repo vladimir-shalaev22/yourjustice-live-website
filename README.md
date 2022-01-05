@@ -38,7 +38,7 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```
-$ git clone git@github.com:YourJustice-Live/yourjustice-live-website.git && cd yourjustice-live-website
+$ git clone git@github.com:[your_github_handle]/yourjustice-live-website.git && cd yourjustice-live-website
 ```
 
 If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts.
