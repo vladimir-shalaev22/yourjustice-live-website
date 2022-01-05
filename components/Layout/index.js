@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Header, Footer } from 'components'
 
 import style from './style.module.scss'
+import AnalyticsScripts from 'components/AnalyticsScripts/AnaliticsScripts'
 
 const MIN_WIDTH = 428
 
@@ -52,6 +53,7 @@ function Layout({ children }) {
       <Header />
       {children}
       <Footer />
+      <AnalyticsScripts />
     </div>
   )
 }
