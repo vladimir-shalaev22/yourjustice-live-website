@@ -141,6 +141,6 @@ _The Translation Program is an initiative to translate yourjustice.life into dif
 
 | `/public`                              | Image assets                                                                                                                                                                         |
 | `/styles`                             | Root level css styling                                                                                                                                                                                                 |
-| `/utils`                              | Custom utility scripts                                                                                                                                                                                     |
+| `/utils`                              | Custom utility scripts                                                                                                                                                                                     ||
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
