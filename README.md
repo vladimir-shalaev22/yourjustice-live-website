@@ -122,12 +122,11 @@ _The Translation Program is an initiative to translate yourjustice.life into dif
 
 | Folder                                   | Primary use                                                                                                                                                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/components`                                  | Next.js components that do not function as standalone pages                                                                                                                                                                                 |
-| `/data`                            | Markdown(.md) files for site content                                                                                                                                                                                                        |
-| `/pages`                        | React components that do not function as standalone pages                                                                                                                                                           |
-
-| `/public`                              | Image assets                                                                                                                                                                         |
-| `/styles`                             | Root level css styling                                                                                                                                                                                                 |
-| `/utils`                              | Custom utility scripts                                                                                                                                                                                     |
+| `/components`                                  | Next.js components that do not function as standalone pages              |
+| `/data`                            | Markdown(.md) files for site content                                                                                         
+| `/pages`                        | React components that do not function as standalone pages         |
+| `/public`                              | Image assets     |
+| `/styles`                             | Root level css styling                              |
+| `/utils`                              | Custom utility scripts                  |
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
