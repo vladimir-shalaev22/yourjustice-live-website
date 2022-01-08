@@ -38,7 +38,7 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```
-$ git clone git@github.com:YourJustice-Live/yourjustice-live-website.git && cd yourjustice-live-website
+$ git clone git@github.com:[your_github_handle]/yourjustice-live-website.git && cd yourjustice-live-website
 ```
 
 If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts.
@@ -60,20 +60,7 @@ $ git merge upstream/dev
 3. Install dependencies
 
 ```
-$ yarn +install??
-```
-
-4. Add Mail SendGrid API token (free)
-
-To send letters you need to setup enviroment.
-
-> - In local repo root directory: Make a copy of `.env.example` and name it `.env`
-> - Copy & paste your new GitHub API token into `.env`
-
-```
-// .env
-SENDGRID_API_KEY
-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
+$ yarn install
 ```
 
 ### Make awesome changes!
@@ -127,20 +114,19 @@ _The Translation Program is an initiative to translate yourjustice.life into dif
 
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
-- [Next.js]
-- [Markdown]
-- [SendGrid]
+- [Next.js](https://nextjs.org/docs/getting-started)
+- [Markdown](https://www.markdownguide.org/getting-started/)
+- [SendGrid](https://sendgrid.com/)
 
 ### Code structure
 
 | Folder                                   | Primary use                                                                                                                                                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/components`                                  | Next.js components that do not function as standalone pages                                                                                                                                                                                 |
-| `/data`                            | Markdown(.md) files for site content                                                                                                                                                                                                        |
-| `/pages`                        | React components that do not function as standalone pages                                                                                                                                                           |
-
-| `/public`                              | Image assets                                                                                                                                                                         |
-| `/styles`                             | Root level css styling                                                                                                                                                                                                 |
-| `/utils`                              | Custom utility scripts                                                                                                                                                                                     |
+| `/components`                                  | Next.js components that do not function as standalone pages              |
+| `/data`                            | Markdown(.md) files for site content                                                                                         
+| `/pages`                        | Static pages         |
+| `/public`                              | Image assets     |
+| `/styles`                             | Root level css styling                              |
+| `/utils`                              | Custom utility scripts                  |
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
