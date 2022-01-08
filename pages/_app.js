@@ -10,7 +10,7 @@ const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID;
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    init({ url: 'https://yourjusticelife.matomo.cloud/', siteId: '1' });
+    init({ url: 'https://yourjusticelife.matomo.cloud', siteId: '1' });
   })
   return <Layout>
     <Component {...pageProps} />
