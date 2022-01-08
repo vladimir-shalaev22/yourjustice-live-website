@@ -213,8 +213,7 @@ Tiles are filled with two types of information: a tile function and a constructi
 
 Tile function is a description of an event, phenomenon, or product that all role performers will reach if they perform all the actions specified within that tile.
 
-<Code> 
-💡 An example of a tile function:
+<Code>💡 An example of a tile function:
 
 The CO2 level does not exceed the value of X at any point in the atmosphere.
 
