@@ -5,12 +5,16 @@
 We ask ourselves this question: why are our technical capabilities now at their highest level ever, but instead of trying to harness their potential and unite to meet the challenges together, we are increasingly withdrawing into ourselves? As individuals, as states, and as a world.
 
 This article presents only the results of our reflections on the causes. The exit scenario is a separate conversation, which we have moved to a WhitePaper [why do you call it a WhitePaper? Explanation needed]. This is not aimed at any individual: we are looking at the connections within humanity as a whole, not its individual manifestations.
-Who are we? <span style="color:red;">(insert [what])</span>
 
-YourJustice.Live is a decentralized platform for virtual tribes and jurisdictions with their own legislation, social rankings, courts, contracts, and economics. With YourJustice everyone can create their own jurisdiction or join an existing one. The unifying environment is Humanity.
+<details>
+  <summary>Who are we?</summary>
+<br>
+	YourJustice.Live is a decentralized platform for virtual tribes and jurisdictions with their own legislation, social rankings, courts, contracts, and economics. With YourJustice everyone can create their own jurisdiction or join an existing one. The unifying environment is Humanity.
 
-All forms of human relations can be expressed and automated on this platform using the human-readable-writable markup language YJML or a visual editor.
-Functionality, transparency and compliance with rules and laws within the jurisdictions created by this platform are provided by a full-scaled judicial and rating system based on game theory and smart-law technology.
+	All forms of human relations can be expressed and automated on this platform using the human-readable-writable markup language YJML or a visual editor.
+
+	Functionality, transparency and compliance with rules and laws within the jurisdictions created by this platform are provided by a full-scaled judicial and rating system based on game theory and smart-law technology.
+</details>
 
 ## <a id="duty-on-arrival"></a>Duty on arrival
 
@@ -27,13 +31,12 @@ For example, sources tell us that the largest items of expenditure in most count
 Usually, public institutions claim that it is possible to change everything that an individual member of society is unhappy with by using the mechanisms existing within the system.
 
 But in reality, attempts to understand the validity and necessity of this or that "service", and especially express any dissatisfaction, usually end sadly for the initiator. You know these examples (this one, this one and this one. And many others). They are in the news.
+
 Mass protest as a way to renegotiate the contract with the jurisdiction is a very labour-intensive process. It often leads to bloodshed and is not always successful. In addition, the goal of the protest is often not to change the system as a whole, but only to change its rulers. And this is not enough.
 
 ## <a id="citizens-as-children"></a>Citizens as children
 
 This is how we can characterize the current level of relations that have developed between the two sides of the contract. On the one side are government institutions, which treat members of society as unintelligent children and limit their influence on the processes of public life in every possible way. On the other hand, there is **society itself, which agrees to these restrictions, not being used to taking responsibility for the consequences of its decisions**.
-
-<span style="color: red;">(insert what?)</span>
 
 The trend for 2020-2021 is the introduction of anti-epidemic restrictions. Universal vaccination, which is de jure voluntary, but de facto compulsory; restriction of freedom to move between states; introduction of "health passports"; business shutdown without full compensation for losses; prohibition to visit public places and even prohibition to go out.
 Restrictions were imposed quickly and there were no options not to follow them. The question of why people accepted the loss of some of their rights and freedoms as the norm is only one of many.
@@ -124,6 +127,7 @@ There have indeed been brilliant, incandescent years of technological advancemen
 We see that every day more and more people on planet Earth are ready to grow up. There are many changemakers in the world - people, communities, organizations and even states developing alternative strategies hoping to influence the future. They are willing and able to get things done if given the chance.
 
 We believe that together we can affect the equilibrium of large systems for the benefit of mankind. Our task is to find each other. Then we will improve the chances for everyone.
+
 We will devote a WhitePaper to how we see the New Equilibrium and what technological possibilities will lead to it.
 
 

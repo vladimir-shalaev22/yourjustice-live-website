@@ -136,7 +136,7 @@ Here are the elements of the solution that need to be put together to make it wo
 - **Tiles** are those flexible descriptions of public relations of any complexity, be they the sale of cucumbers in the market, a court hearing on a high-profile case, the operation of a turnstile on the underground, or even the life of an entire country.
 - **Humanity** is a single environment that unites all people and grants them a set of inalienable rights. Humanity also ensures the security of existing relationships in a decentralised way.
 - **A multi rating** system allows people from different jurisdictions with different value systems to understand whether they should interact with each other.
-Courts in different jurisdictions offer everyone the opportunity to get justice in the value system they are close to, regardless of whether the defendant is on the platform or not.
+- **Courts in different jurisdictions** offer everyone the opportunity to get justice in the value system they are close to, regardless of whether the defendant is on the platform or not.
 - **Everything for business** — contracts, wallets, currency, marketplaces and so on. One can earn both from creating successful configurations of social relationships and from successfully participating in them. And there are many more options.
 - **An account system** allows you to have an account for people and organisations (not just wallet holders). The rule of our system is 1 living person = 1 account. This rule is achieved with Pure Bio ID.
 - **A browser social network** will allow you to move around the blockchain like a social network while discussing problems that require solutions within the community.
@@ -230,13 +230,13 @@ A constructive description of a tile may include:
 A list and a description of all the roles of the projected social relationship and the rights those roles have. This is the only mandatory element of a constructive description of a tile, other elements are optional.
 - **Actions.**
 Description of the actions themselves, the rights to which are transferred to various roles.
- - **Conventions**
+- **Conventions**
 A list and a description of all other rules and regulations that are impossible to describe through the sections "Roles specifications" and "Actions", but their presence and description in a tile is mandatory.
 - **Statuses specification**
 A list and a description of statuses of a tile. If a tile is designed as a process, each status reflects a stage of a tile at a certain point in time. For example: a contract may go from 'signed' to 'completed', and from there to the status 'completion is challenged'. 
 - **Types**
  A tile can describe the social relations of the tiles associated with it, as commercial codes describe the rules for the relationship between a LTD or GmbH.
- - **Wallets link**
+- **Wallets link**
 A link to the wallets and addresses on the blockchain that will be used by the smart contracts referencing this tile.
 
 The set of elements listed above gives enough flexibility to describe role systems with any level of complexity.
@@ -352,9 +352,9 @@ Provide basic inalienable rights for people (at least for those who have access 
 
 Actions the role can perform:
 
-1.      	Create a jurisdiction and customize its operation as one sees fit
-2.      	Leave the created jurisdiction
-3.      	Invite another person to the platform
+1. Create a jurisdiction and customize its operation as one sees fit
+2. Leave the created jurisdiction
+3. Invite another person to the platform
 
 Further we will discuss how exactly YJML works and what "Create Jurisdiction" and "Leave Jurisdiction" mean in the documentation on YJML.
 
@@ -370,23 +370,23 @@ Tile function: Produce a minimum amount of noise for each of the participants
 **Role specification:**
 1. Adept of the Cult of Silence.
 Rights of the role:
-	- askForSilence Send a polite instant message to another person asking them to be quiet
-	- createCase Sue a person who is making too much noise
-	- buyEarphones Buy headphones with a high level of protection
-	- sendSilentMessage Send a silent message, turning all the words into polite ones
-	- buySilentCar Buy a new vehicle that produces minimal noise
-	- setupNoizeListener Install an application that monitors noise levels
+	- `askForSilence` Send a polite instant message to another person asking them to be quiet
+	- `createCase` Sue a person who is making too much noise
+	- `buyEarphones` Buy headphones with a high level of protection
+	- `sendSilentMessage` Send a silent message, turning all the words into polite ones
+	- `buySilentCar` Buy a new vehicle that produces minimal noise
+	- `setupNoizeListener` Install an application that monitors noise levels
  
 2. Judge of the Cult of Silence
 Rights of the role:
 	- All the Actions of the role "Adept of the Cult of Silence".
-	- sendJudgeProposal Resolve disputes of tribe members who sued to the court
-	- makeJudgement Decide what the fines for producing excessive noise will go to
+	- `sendJudgeProposal` Resolve disputes of tribe members who sued to the court
+	- `makeJudgement` Decide what the fines for producing excessive noise will go to
  
 3. Application that monitors noise levels
 Rights of the role:
-	- uploadNoizeData Monitor noise levels through smartphone microphones in real time, recognize voices
-	- chargeNoizeMaker Issue a fine to a tribe member for exceeding a decibel level that is considered by the tribe as unacceptable
+	- `uploadNoizeData` Monitor noise levels through smartphone microphones in real time, recognize voices
+	- `chargeNoizeMaker` Issue a fine to a tribe member for exceeding a decibel level that is considered by the tribe as unacceptable
 
 **Conventions:**
 Every resident strives in every possible way to produce as little noise as possible.
@@ -407,29 +407,29 @@ All terms of the agreement made between people are fulfilled to the fullest exte
 **Role specification:**
 1. Customer
 Actions the role can perform:
-	- fillContract Fill in the contract information, specify the subject matter of the agreement, the legal system and select the mediator
-	- setMilestone Clarify the expected result of the step and the conditions under which the result will be considered achieved
-	- stakeMilestone Put the amount of money required for Milestone on the contract
-	- closeMilestone Send the amount of money lying on the contract to the contractor and receive the copyrights of the work from them
-	- reviewContractor Leave a review for the contractor, raising or lowering their score
-	- callMediator Pass the contract on to the mediator
-	- reviewMediator Leave a review for the mediator, raising or lowering their score
-	- leaveContract Leave the contract, send the money to the mediator
+	- `fillContract` Fill in the contract information, specify the subject matter of the agreement, the legal system and select the mediator
+	- `setMilestone` Clarify the expected result of the step and the conditions under which the result will be considered achieved
+	- `stakeMilestone` Put the amount of money required for Milestone on the contract
+	- `closeMilestone` Send the amount of money lying on the contract to the contractor and receive the copyrights of the work from them
+	- `reviewContractor` Leave a review for the contractor, raising or lowering their score
+	- `callMediator` Pass the contract on to the mediator
+	- `reviewMediator` Leave a review for the mediator, raising or lowering their score
+	- `leaveContract` Leave the contract, send the money to the mediator
 
 2. Contractor
 Actions the role can perform:
-	- fillContract Fill in the contract with the conditions under which one is ready to provide the service
-	- setMilestone Clarify the expected result of the step and the conditions under which the result will be considered achieved
-	- sendMilestoneResult Send the result of the Milestone to the contract for the customer to review it
-	- reviewClient Leave a review to the customer, raising or lowering their score
-	- callMediator Pass the contract on to the mediator
-	- reviewMediator Leave a review to mediator, raising or lowering their score
-	- leaveContract Leave the contract, send the money to the customer
+	- `fillContract` Fill in the contract with the conditions under which one is ready to provide the service
+	- `setMilestone` Clarify the expected result of the step and the conditions under which the result will be considered achieved
+	- `sendMilestoneResult` Send the result of the Milestone to the contract for the customer to review it
+	- `reviewClient` Leave a review to the customer, raising or lowering their score
+	- `callMediator` Pass the contract on to the mediator
+	- `reviewMediator` Leave a review to mediator, raising or lowering their score
+	- `leaveContract` Leave the contract, send the money to the customer
 
 3. Mediator
 Actions the role can perform:
-	- acceptMediation accept the mediator's role
-	- resolveContract decide to whom and in what proportion the funds from the contract will be sent
+	- `acceptMediation` accept the mediator's role
+	- `resolveContract` decide to whom and in what proportion the funds from the contract will be sent
 
 **Conventions:**
 Are not required for this tile.
@@ -474,18 +474,18 @@ A judge provides residents of the jurisdiction with regular reports on their wor
 
 1. Judge
 Actions the role can perform:
-	1.	Create a report on one’s work, which will include sections:
+	- Create a report on one’s work, which will include sections:
 		- List of current cases - A list of cases the judge is working on
 		- Recently closed cases – A list of cases closed in a two-week period.
 		- Income - The amount of money received for judicial work in the past two-week period.
-	2.	Publish a report on one’s open blog between 00:00 and 24:00 UTC +0 every Saturday.
+	- Publish a report on one’s open blog between 00:00 and 24:00 UTC +0 every Saturday.
 
 2. Smart Law
 Actions the role can perform: 
-	1. Check once every two weeks on Sunday if the judge has released the report on time and if the report includes all the right sections.
-	2. Penalize the judge if the report was not released on time, did not include the right sections, or was not released at all.
-	3. Keep a record of the fact that the law was broken.
-	4. Remove the offending judge from the role of "Judge" through removal of the role from the profile.
+	- Check once every two weeks on Sunday if the judge has released the report on time and if the report includes all the right sections.
+	- Penalize the judge if the report was not released on time, did not include the right sections, or was not released at all.
+	- Keep a record of the fact that the law was broken.
+	- Remove the offending judge from the role of "Judge" through removal of the role from the profile.
 
 **Conventions:**
 
@@ -524,11 +524,11 @@ Problems arise when the scoring process, or rather the value system behind it, i
 
 We believe an ecosystem of scores is necessary for the platform due to 3 key reasons:
 
-Reason 1. Locally, scores help you to quickly understand whether it's worth interacting with a person, tribe, organization or their products.
+**Reason 1**. Locally, scores help you to quickly understand whether it's worth interacting with a person, tribe, organization or their products.
 
-Reason 2. In medium term perspective, scores allow you to influence the quality of people's collaborative and cooperative activities.
+**Reason 2**. In medium term perspective, scores allow you to influence the quality of people's collaborative and cooperative activities.
 
-Reason 3. Globally, score system is a motivation for action. Accordingly, scores and rewards focused on planetary values can, for example, help not only unite communities and gain subscribers, but also save the Earth from environmental disasters or accelerate technological or ethical progress.
+**Reason 3**. Globally, score system is a motivation for action. Accordingly, scores and rewards focused on planetary values can, for example, help not only unite communities and gain subscribers, but also save the Earth from environmental disasters or accelerate technological or ethical progress.
 
 ### How scores work
 #### The relativity of scores
@@ -550,6 +550,7 @@ For example, a person may be absolutely indifferent to what citizens from the op
 Therefore, there is nothing to worry about, if you are scored by a community whose opinion is not important to you, because you don't want to cooperate with them. But if you are scored by those who are important to you, that's a good reason to listen carefully.
 
 #### Two sides of the scale
+
 Obviously, one scale is not enough to evaluate a score. In that case, it would be possible to do "great evil" and then compensate for it with lots of little good deeds.
 
 We need at least two scales: positive and negative. Then no amount of positive deeds will compensate for the negative.
@@ -587,7 +588,9 @@ Change of score usually happens:
 - Through a court decision (for example, you proved in court that a factory degrades the environment and downvoted both the organization itself and its responsible persons)
 
 #### Challenging the points
+
 Let's say you received a negative score, whether it’s deserved or it’s just a mistake. You have options:
+
 - Challenge the addition of score points directly in the jurisdiction that set up the score system.
 - Agree with the person, jurisdiction, or organization that the damage you caused them will be compensated.
 - Talk to the initiator of the points addition (it may be enough to simply explain your position or apologize for the inconvenience caused).
@@ -620,7 +623,7 @@ To make it easier to choose, we've added several indices to the system:
 
 Same as with the Humanity score, the work on the tribal indexing system will be managen in an open manner. Each user of the platform will be able to influence the formation of filters for the indices.
 
-#### Why our score system is going to work
+#### Why our score system is going to work?
 
 Here are a few key messages that confirm availability of our score system.
 
@@ -911,7 +914,7 @@ All complex interactions, such as voting, bidding, etc., are placed on YourJusti
 
 Contracts involve interaction around fungible and non-fungible tokens. For example, in the system it is quite possible to create a contract, according to which an ownership of a copyrighted object or a token that opens a car is transferred from one wallet to another in exchange for an amount of money or a fulfillment of certain conditions.
 
-### СEnvironment for businessmen and access to crypto for ordinary peiple
+### С-Environment for businessmen and access to crypto for ordinary peiple
 
 Anyone can create a company or organization in any jurisdiction (if they provided such an opportunity).
 
@@ -948,7 +951,7 @@ Moreover, price and quality will always be competitive because:
 1. There is competition between jurisdictions and people will move to one with better service.
 2. The code is open, which means that if the price of YJ is unreasonably high and the rules are too complicated, forks of the network will appear.
 
-To summarize: jurisdictions will profit from the execution of smart contracts, and residents and customers of those jurisdictions will benefit from quality and ever-improving contracts at a market-based price.
+**To summarize: jurisdictions will profit from the execution of smart contracts, and residents and customers of those jurisdictions will benefit from quality and ever-improving contracts at a market-based price.**
 
 ### Jurisdictions and Marketplaces
 
@@ -966,7 +969,7 @@ We are expecting all transactions of this nature to be done through the tile sys
 
 ### The DAPPS ecosystem
 
-What else?
+#### What else?
 
 There are actually more options for using the tiles than we can even imagine! We are counting on development teams to join us in creating new areas of their application.
 
