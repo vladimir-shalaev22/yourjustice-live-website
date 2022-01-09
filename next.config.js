@@ -7,6 +7,11 @@ const { withSentryConfig } = require('@sentry/nextjs');
 
 const moduleExports = {
   // Your existing module.exports
+  i18n: {
+    locales: ['en', 'ru', 'ko', 'tr'],
+    defaultLocale: 'en',
+  },
+  reactStrictMode: true
 };
 
 const sentryWebpackPluginOptions = {
@@ -24,11 +29,3 @@ const sentryWebpackPluginOptions = {
 // Make sure adding Sentry options is the last code to run before exporting, to
 // ensure that your source maps include changes from all other Webpack plugins
 module.exports = withSentryConfig(moduleExports, sentryWebpackPluginOptions);
-
-module.exports = {
-  i18n: {
-    locales: ['en', 'ru', 'ko', 'tr'],
-    defaultLocale: 'en',
-  },
-  reactStrictMode: true
-}
