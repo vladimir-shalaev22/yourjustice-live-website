@@ -67,7 +67,7 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
         <span>On this page</span>
       </button>
       <div className={`${style.dropdown} ${isOpen ? style.opened : ''}`}>
-        {search && <Search />}
+        {/* {search && <Search />} */}
         <p>On this page</p>
         <ul>
           {nav.map((anchor, i) => <li key={`sdxmc230cc-1c32` + i}>

@@ -229,7 +229,7 @@
       font-size: 21px;
       line-height: 34px;
       white-space: nowrap;
-      left: 136px;
+      left: 123px;
       bottom: -15px;
     }
 
@@ -247,7 +247,7 @@
       @include respond-to(sm) {
         width: 99px;
         height: 78px;
-        left: -13px;
+        left: -5px;
         top: -64px;
         background: url('/assets/images/blockquote-arrow-2-sm.svg') center center no-repeat;
       }
