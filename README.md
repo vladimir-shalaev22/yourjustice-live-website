@@ -8,7 +8,7 @@ This website can be improved and changed by the contribution of community member
 
 YourJustice code is not yet published to OpenSource, but we would do it as soon as we are ready.
 
-## So welcome and let’s make justice great again!
+## So welcome, and let’s make justice great again!
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
