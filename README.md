@@ -114,9 +114,9 @@ _The Translation Program is an initiative to translate yourjustice.life into dif
 
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
-- [Next.js]
-- [Markdown]
-- [SendGrid]
+- [Next.js](https://nextjs.org/docs/getting-started)
+- [Markdown](https://www.markdownguide.org/getting-started/)
+- [SendGrid](https://sendgrid.com/)
 
 ### Code structure
 
@@ -124,7 +124,7 @@ _The Translation Program is an initiative to translate yourjustice.life into dif
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/components`                                  | Next.js components that do not function as standalone pages              |
 | `/data`                            | Markdown(.md) files for site content                                                                                         
-| `/pages`                        | React components that do not function as standalone pages         |
+| `/pages`                        | Static pages         |
 | `/public`                              | Image assets     |
 | `/styles`                             | Root level css styling                              |
 | `/utils`                              | Custom utility scripts                  |

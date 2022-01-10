@@ -23,5 +23,10 @@ export default function HomeBanner({language}) {
         {data[locale].list.map((li, i) => <li key={`vfdds2` + i}>{li}</li>)}
       </ul>
     </div>
+    <button type="button" onClick={() => {
+      throw new Error("Sentry Frontend Error");
+    }}>
+        Throw error
+    </button>
   </div>
 }
