@@ -24,6 +24,9 @@ export {default as CustomLink} from './CustomLink'
 export {default as Paragraph} from './Paragraph'
 export {default as AnswersNavigation} from './AnswersNavigation'
 
+// WhitePaper components
+export {default as WhitepaperChapter} from './WhitepaperChapter'
+
 // Utils components
 export {default as Button} from './Button'
 export {default as Language} from './Language'

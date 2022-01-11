@@ -1,22 +1,48 @@
 import React, {useState} from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-import {ArticleContent, PageNavigation} from 'components'
+import {ArticleContent, PageNavigation, Button} from 'components'
 
-import {getData} from 'utils'
+import {getData, getAllFiles} from 'utils'
 
-import style from 'styles/pages/whitepaper.module.scss'
+import style from './index.module.scss'
 
 export async function getStaticProps(context) {
-  const {locale} = context
-  const result = await getData('', 'whitepaper', locale)
+  const {locale, params} = context
+  const page = params.id
+  const result = await getData('whitepaper', page, locale)
 
   return {
-    props: result
+    props: {
+      ...result,
+      page
+    }
   }
 }
 
-export default function WhitePaper({data}) {
+export async function getStaticPaths({locales}) {
+  const pages = getAllFiles('whitepaper')
+
+  const paths = locales.reduce(
+    (acc, locale) => [
+      ...acc,
+      ...pages.map((id) => ({
+        params: {
+          id,
+        },
+        locale,
+      })),
+    ],
+    []
+  );
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export default function Article({data, page}) {
   const [nav, setNav] = useState([])
 
   return (
