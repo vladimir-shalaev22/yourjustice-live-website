@@ -26,6 +26,7 @@ export {default as AnswersNavigation} from './AnswersNavigation'
 
 // WhitePaper components
 export {default as WhitepaperChapter} from './WhitepaperChapter'
+export {default as WhitepaperNav} from './WhitepaperNav'
 
 // Utils components
 export {default as Button} from './Button'

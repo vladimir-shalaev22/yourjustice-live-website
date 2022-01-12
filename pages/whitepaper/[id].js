@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 import {ArticleContent, PageNavigation, Button} from 'components'
 
@@ -52,6 +53,7 @@ export default function Article({data, page}) {
           <div className={style.header}>
             <div className={style.breadcrumbs}><Link href="/">Home</Link> / <span>Whitepaper</span></div>
             <div className={style.date}>Page last updated: November 25, 2021</div>
+            <h1>YourJustice WhitePaper</h1>
           </div>
           <div className={style.navigation}>
             <PageNavigation nav={nav} />

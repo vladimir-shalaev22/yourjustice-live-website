@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import Markdown from 'markdown-to-jsx'
 
-import {Button, Code, CustomLink, Paragraph, ArticleTable, ArticleAuthor} from 'components'
+import {Button, Code, CustomLink, Paragraph, ArticleTable, ArticleAuthor, WhitepaperNav} from 'components'
 
 import style from './index.module.scss'
 
@@ -51,6 +51,9 @@ export default function ArticleContent({content, setNav}) {
               },
               Author: {
                 component: ArticleAuthor
+              },
+              WhitepaperNav: {
+                component: WhitepaperNav
               }
             },
           }}

@@ -307,3 +307,11 @@
     }
   }
 }
+
+.whitepaper-nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

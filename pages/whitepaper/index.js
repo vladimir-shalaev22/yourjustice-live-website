@@ -7,7 +7,7 @@ import {getData} from 'utils'
 
 import {links} from 'components/WhitepaperChapter/data'
 
-import style from 'styles/pages/whitepaper.module.scss'
+import style from './index.module.scss'
 
 export async function getStaticProps(context) {
   const {locale} = context
@@ -36,7 +36,7 @@ export default function WhitePaper({data}) {
               {links.map(elem => <li key={elem.link}>
                 {elem.inners
                   ? <WhitepaperChapter elem={elem} />
-                  : <Link href={elem.link}>
+                  : <Link href={'/whitepaper/' + elem.link}>
                     <a className={style.link}>
                       {elem.text}
                     </a>

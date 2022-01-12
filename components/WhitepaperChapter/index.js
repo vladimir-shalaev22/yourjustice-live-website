@@ -15,12 +15,12 @@ export default function WhitepaperChapter({elem}) {
   return (
     <div className={style.wrapper}>
       <a className={`${style.toggle} ${isOpen ? style.opened : ''}`} onClick={onToggle}></a>
-      <Link href={link}>
+      <Link href={'/whitepaper/' + link}>
         <a className={style.link}>{text}</a>
       </Link>
       <ul className={`${style.links} ${isOpen ? style.opened : ''}`}>
         {inners.map(elem => <li key={elem.link}>
-          <Link href={elem.link}>{elem.text}</Link>
+          <Link href={'/whitepaper/' + elem.link}>{elem.text}</Link>
         </li>)}
       </ul>
     </div>
