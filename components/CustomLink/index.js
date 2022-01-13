@@ -8,5 +8,5 @@ export default function CustomLink({type = 'external', href, className = 'link',
     ? <Link href={href}>
       <a className={style[className]}>{children}</a>
     </Link>
-    : <a href={href} className={style[className]} target="_blank" rel="nofollow noopener">{children}</a>
+    : <a href={href} className={style[className]} target="_blank" rel="nofollow noreferrer">{children}</a>
 }
