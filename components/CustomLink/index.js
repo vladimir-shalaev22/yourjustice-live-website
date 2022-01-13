@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 import style from './index.module.scss'
 
-export default function CustomLink({type = 'external', to, className = 'link', children}) {
+export default function CustomLink({type = 'external', href, className = 'link', children}) {
   return type === 'inner'
-    ? <Link href={to}>
+    ? <Link href={href}>
       <a className={style[className]}>{children}</a>
     </Link>
-    : <a href={to} className={style[className]}>{children}</a>
+    : <a href={href} className={style[className]} target="_blank" rel="nofollow noopener">{children}</a>
 }

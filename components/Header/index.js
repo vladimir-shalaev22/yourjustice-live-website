@@ -10,7 +10,7 @@ import style from './index.module.scss'
 
 export default function Header({lang, setLang}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const {locale} = useRouter()
+  const {locale, route} = useRouter()
   const {links} = data
 
   const handleMenu = e => {
@@ -33,13 +33,19 @@ export default function Header({lang, setLang}) {
   return <header className={style.header}>
     <div className={style.headerContainer}>
       <Link href="/">
-        <a className={style.toHome}>
+        <a className={`${style.toHome} ${route === '/' ? style.disabled : ''}`}>
           YourJustice.life
         </a>
       </Link>
       <ul className={style.links}>
         {links.map((link, i) => <li key={`23c322p11kc1` + i}>
-          <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
+          {
+            route !== '/'
+              ? <Link href={`/#${link.link}`}>
+                <a>{link.text[locale]}</a>
+              </Link>
+              : <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
+          }
         </li>)}
       </ul>
       <div className={style.languages}>
@@ -57,7 +63,13 @@ export default function Header({lang, setLang}) {
           </div>
           <ul>
             {links.map((link, i) => <li key={`23c322p11kc1` + i}>
-              <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
+              {
+                route !== '/'
+                  ? <Link href={`/#${link.link}`}>
+                    <a>{link.text[locale]}</a>
+                  </Link>
+                  : <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
+              }
             </li>)}
           </ul>
         </div>

@@ -67,6 +67,10 @@
     max-height: none;
   }
 
+  &.disclosed {
+    max-height: none !important;
+  }
+
   &::-webkit-scrollbar {
     width: 6px;
     height: 6px;

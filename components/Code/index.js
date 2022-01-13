@@ -4,7 +4,7 @@ import style from './index.module.scss'
 
 const MAX_WIDTH = 192
 
-export default function Code({children}) {
+export default function Code({disclosed = false, children}) {
   const [expanded, setExpanded] = useState(false)
   const [wrapperHeight, setWrapperHeight] = useState(0)
   const wrapper = useRef(null)
@@ -33,14 +33,14 @@ export default function Code({children}) {
   return (
     <div ref={wrapper} className={style.wrapper}>
       {wrapperHeight >= MAX_WIDTH && <ul className={style.buttons}>
-        <li>
+        {!disclosed && <li>
           <button onClick={handleExpand}>{expanded ? 'Hide' : 'Show all'}</button>
-        </li>
+        </li>}
         <li>
           <button onClick={handleCopy}>Copy</button>
         </li>
       </ul>}
-      <div ref={code} className={`${style.code} ${expanded ? style.expanded : ''}`}>
+      <div ref={code} className={`${style.code} ${expanded ? style.expanded : ''} ${disclosed ? style.disclosed : ''}`}>
         {children}
       </div>
       <input ref={clipboard} type="text"/>

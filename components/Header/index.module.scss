@@ -37,6 +37,10 @@
   line-height: 24px;
   text-decoration: none;
   letter-spacing: $ls-second;
+
+  &.disabled {
+    pointer-events: none;
+  }
 }
 
 .links {

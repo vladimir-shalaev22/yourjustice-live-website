@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {useRouter} from 'next/router'
 import Link from 'next/link'
 
 import {ArticleContent, PageNavigation, WhitepaperChapter} from 'components'
@@ -20,6 +21,7 @@ export async function getStaticProps(context) {
 
 export default function WhitePaper({data}) {
   const [nav, setNav] = useState([])
+  const {locale} = useRouter()
 
   return (
     <div className={style.wrapper}>
@@ -42,7 +44,7 @@ export default function WhitePaper({data}) {
                   ? <WhitepaperChapter elem={elem} />
                   : <Link href={'/whitepaper/' + elem.link}>
                     <a className={style.link}>
-                      {elem.text}
+                      {elem.text[locale]}
                     </a>
                   </Link>
                 }
