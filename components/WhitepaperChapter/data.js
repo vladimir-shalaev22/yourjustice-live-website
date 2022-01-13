@@ -60,14 +60,14 @@ export const links = [
           en: 'Agents of changes (changemakers), that is, you!',
           ru: 'Агенты изменений. То есть вы!'
         },
-        link: 'agents-of-changes-that-is-yo'
+        link: 'chapter-one#agents-of-changes-that-is-yo'
       },
       {
         text: {
           en: 'What we expect and what we strive for?',
           ru: 'Что мы ожидаем и к чему стремимся?'
         },
-        link: 'what-we-expect-and-what-we-strive-for'
+        link: 'chapter-one#what-we-expect-and-what-we-strive-for'
       }
     ]
   },
@@ -83,28 +83,28 @@ export const links = [
           en: 'Tiles - a framework for describing role systems',
           ru: 'Тайлы — фреймворк для описания ролевых систем'
         },
-        link: 'tiles'
+        link: 'chapter-two#tiles'
       },
       {
         text: {
           en: 'Sample Tiles: Humanity',
           ru: 'Примеры тайлов: Humanity'
         },
-        link: 'humanity'
+        link: 'chapter-two#humanity'
       },
       {
         text: {
           en: 'Sample Tiles: The Tribe of Silence Lovers',
           ru: 'Примеры тайлов: Племя любителей тишины'
         },
-        link: 'silence-lovers'
+        link: 'chapter-two#silence-lovers'
       },
       {
         text: {
           en: 'Sample Tiles: Contract',
           ru: 'Примеры тайлов: Контракт'
         },
-        link: 'sample-tiles'
+        link: 'chapter-two#sample-tiles'
       },
       ,
       {
@@ -112,28 +112,28 @@ export const links = [
           en: 'Tile samples: YJML standardized smart law',
           ru: 'Примеры тайлов: YJML-смарт-закон'
         },
-        link: 'standardized-smart-law'
+        link: 'chapter-two#standardized-smart-law'
       },
       {
         text: {
           en: 'Scores',
           ru: 'Рейтинги'
         },
-        link: 'scores'
+        link: 'chapter-two#scores'
       },
       {
         text: {
           en: 'Courts',
           ru: 'Суды'
         },
-        link: 'courts'
+        link: 'chapter-two#courts'
       },
       {
         text: {
           en: 'Human Entity',
           ru: 'Human Entity'
         },
-        link: 'human-entity'
+        link: 'chapter-two#human-entity'
       },
       ,
       {
@@ -141,14 +141,14 @@ export const links = [
           en: 'Nicknames',
           ru: 'Псевдонимы'
         },
-        link: 'nicknames'
+        link: 'chapter-two#nicknames'
       },
       {
         text: {
           en: 'Tribal Economics. Cross-Chain Finance',
           ru: 'Экономика племен. Cross-Chain'
         },
-        link: 'cross-chain-finance'
+        link: 'chapter-two#cross-chain-finance'
       }
     ]
   }

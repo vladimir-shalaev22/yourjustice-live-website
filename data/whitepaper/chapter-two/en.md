@@ -146,7 +146,7 @@ Humanity can be seen as a certain "layer" between a person and their citizenship
 
 This is what it looks like in the Humanity declaration:
 
-<Code>
+<Code disclosed="true">
 yaml
 Humanity:
 	title:
@@ -804,6 +804,6 @@ There are actually more options for using the tiles than we can even imagine! We
 For example, interesting areas like interaction with the Internet of things (doors that you can open only if you have certain rights), with data collection (writing video and audio of your life to your own storage to submit this data to courts, decentralized insurance, and so on).
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper/chapter-one"><span>Prev. chapter</span></Link>
-  <Link type="inner" to="/whitepaper"><span>Table of content</span></Link>
+  <Link type="inner" href="/whitepaper/chapter-one"><span>Prev. chapter</span></Link>
+  <Link type="inner" href="/whitepaper"><span>Table of content</span></Link>
 </WhitepaperNav>

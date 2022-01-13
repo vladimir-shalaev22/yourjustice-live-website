@@ -13,6 +13,6 @@ YJ также подходит для моделирования и тестир
 Задача YourJustice — изменить правила игры так, чтобы они больше подходили каждому живому человеку. Какими будут эти правила, определяете Вы, дорогой читатель.
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper/ru"><span>Содержание</span></Link>
-  <Link type="inner" to="/whitepaper/ru/chapter-one"><span>Первая Глава</span></Link>
+  <Link type="inner" href="/whitepaper/ru"><span>Содержание</span></Link>
+  <Link type="inner" href="/whitepaper/ru/chapter-one"><span>Первая Глава</span></Link>
 </WhitepaperNav>

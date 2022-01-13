@@ -132,6 +132,6 @@
 * **Мы уверены**: будет весело!
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper/ru/an-abstract"><span>Аннотация</span></Link>
-  <Link type="inner" to="/whitepaper/ru/chapter-two"><span>Следующая глава</span></Link>
+  <Link type="inner" href="/whitepaper/ru/an-abstract"><span>Аннотация</span></Link>
+  <Link type="inner" href="/whitepaper/ru/chapter-two"><span>Следующая глава</span></Link>
 </WhitepaperNav>

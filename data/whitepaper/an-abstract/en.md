@@ -15,6 +15,6 @@ YJ is also suitable for modeling and testing legislation and litigation, can ser
 YourJustice's mission is to change the rules of the game so that they are better for every living person. What those rules will be - that is for you, dear reader, to decide.
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper"><span>Table of content</span></Link>
-  <Link type="inner" to="/whitepaper/chapter-one"><span>First chapter</span></Link>
+  <Link type="inner" href="/whitepaper"><span>Table of content</span></Link>
+  <Link type="inner" href="/whitepaper/chapter-one"><span>First chapter</span></Link>
 </WhitepaperNav>
