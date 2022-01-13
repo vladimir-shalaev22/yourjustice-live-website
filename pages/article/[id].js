@@ -1,32 +1,32 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 
-import {ArticleContent, PageNavigation, Button} from 'components'
+import { ArticleContent, PageNavigation, Button } from 'components'
 
-import {getData, getAllFiles} from 'utils'
+import { getData, getAllFiles } from 'utils'
 
 import style from './index.module.scss'
 
 export async function getStaticProps(context) {
-  const {locale, params} = context
+  const { locale, params } = context
   const page = params.id
   const result = await getData('article', page, locale)
 
   return {
     props: {
       ...result,
-      page
-    }
+      page,
+    },
   }
 }
 
-export async function getStaticPaths({locales}) {
+export async function getStaticPaths({ locales }) {
   const pages = getAllFiles('article')
 
   const paths = locales.reduce(
     (acc, locale) => [
       ...acc,
-      ...pages.map((id) => ({
+      ...pages.map(id => ({
         params: {
           id,
         },
@@ -34,15 +34,15 @@ export async function getStaticPaths({locales}) {
       })),
     ],
     []
-  );
+  )
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   }
 }
 
-export default function Article({data, page}) {
+export default function Article({ data, page }) {
   const [nav, setNav] = useState([])
   const router = useRouter()
 
@@ -55,15 +55,31 @@ export default function Article({data, page}) {
       <div className={style.flex}>
         <div className={style.sidebar}>
           <div className={style.sticky}>
-            <Button className={style.button} reverse={true} onClick={handleBack}>Back</Button>
-            <PageNavigation rootPath={`/article/${page}`} nav={nav} side="left" />
+            <Button
+              className={style.button}
+              reverse={true}
+              onClick={handleBack}
+            >
+              Back
+            </Button>
+            <PageNavigation
+              rootPath={`/article/${page}`}
+              nav={nav}
+              side="left"
+            />
           </div>
         </div>
         <div className={style.content}>
           <ArticleContent content={data} setNav={setNav} />
           <div className={style.postscriptum}>
-            <img src="/assets/images/article-postscriptum.png" alt="postscriptum"/>
-            <p>If you think these stats are incorrect or can be made more accurate, please raise an issue or PR.</p>
+            <img
+              src="/assets/images/article-postscriptum.png"
+              alt="postscriptum"
+            />
+            <p>
+              If you think these stats are incorrect or can be made more
+              accurate, please raise an issue or PR.
+            </p>
           </div>
         </div>
       </div>

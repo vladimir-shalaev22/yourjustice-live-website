@@ -1,33 +1,33 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import {ArticleContent, PageNavigation, Button} from 'components'
+import { ArticleContent, PageNavigation, Button } from 'components'
 
-import {getData, getAllFiles} from 'utils'
+import { getData, getAllFiles } from 'utils'
 
 import style from './index.module.scss'
 
 export async function getStaticProps(context) {
-  const {locale, params} = context
+  const { locale, params } = context
   const page = params.id
   const result = await getData('whitepaper', page, locale)
 
   return {
     props: {
       ...result,
-      page
-    }
+      page,
+    },
   }
 }
 
-export async function getStaticPaths({locales}) {
+export async function getStaticPaths({ locales }) {
   const pages = getAllFiles('whitepaper')
 
   const paths = locales.reduce(
     (acc, locale) => [
       ...acc,
-      ...pages.map((id) => ({
+      ...pages.map(id => ({
         params: {
           id,
         },
@@ -35,15 +35,15 @@ export async function getStaticPaths({locales}) {
       })),
     ],
     []
-  );
+  )
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   }
 }
 
-export default function Article({data, page}) {
+export default function Article({ data, page }) {
   const [nav, setNav] = useState([])
 
   return (
@@ -51,8 +51,12 @@ export default function Article({data, page}) {
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.header}>
-            <div className={style.breadcrumbs}><Link href="/">Home</Link> / <span>Whitepaper</span></div>
-            <div className={style.date}>Page last updated: November 25, 2021</div>
+            <div className={style.breadcrumbs}>
+              <Link href="/">Home</Link> / <span>Whitepaper</span>
+            </div>
+            <div className={style.date}>
+              Page last updated: November 25, 2021
+            </div>
             <h1>YourJustice WhitePaper</h1>
           </div>
           <div className={style.navigation}>
