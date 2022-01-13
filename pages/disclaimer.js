@@ -1,22 +1,18 @@
-import React, {useState} from 'react'
-import Link from 'next/link'
-
-import {ArticleContent, PageNavigation} from 'components'
-
-import {getData} from 'utils'
-
-import style from 'styles/pages/whitepaper.module.scss'
+import React, { useState } from 'react'
+import { ArticleContent } from 'components'
+import { getData } from 'utils'
+import style from 'pages/whitepaper/index.module.scss'
 
 export async function getStaticProps(context) {
-  const {locale} = context
+  const { locale } = context
   const result = await getData('', 'disclaimer', locale)
 
   return {
-    props: result
+    props: result,
   }
 }
 
-export default function Disclamer({data}) {
+export default function Disclamer({ data }) {
   const [nav, setNav] = useState([])
 
   return (
