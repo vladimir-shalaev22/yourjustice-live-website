@@ -1,5 +1,5 @@
 ## <a id="how-the-platform-works"></a>Chapter 2 - How the Platform Works
- 
+
 In this chapter we will focus on key aspects of the YJ platform that will enable an alternative system of social relations between people joining the network.
 
 **In short**: we have developed an easy-to-understand standard for describing social relationships and called it YJML. The foundation of the system is a tile. This is a description of any model of social relations declared by the YJML standard. People will be represented on the platform through a system of profiles and will be able to consolidate into digital jurisdictions based on shared values, which are described in the YJML. The organization of the economy is accomplished through cross-chain. On the basis of the platform it is possible to create your own legal systems, decentralized marketplaces. Fairness and competition will be achieved through a score system. Disputes can be resolved with a judicial engine.
@@ -61,7 +61,7 @@ Description of the actions themselves, the rights to which are transferred to va
 - **Conventions**
 A list and a description of all other rules and regulations that are impossible to describe through the sections "Roles specifications" and "Actions", but their presence and description in a tile is mandatory.
 - **Statuses specification**
-A list and a description of statuses of a tile. If a tile is designed as a process, each status reflects a stage of a tile at a certain point in time. For example: a contract may go from 'signed' to 'completed', and from there to the status 'completion is challenged'. 
+A list and a description of statuses of a tile. If a tile is designed as a process, each status reflects a stage of a tile at a certain point in time. For example: a contract may go from 'signed' to 'completed', and from there to the status 'completion is challenged'.
 - **Types**
  A tile can describe the social relations of the tiles associated with it, as commercial codes describe the rules for the relationship between a LTD or GmbH.
 - **Wallets link**
@@ -187,7 +187,7 @@ Actions the role can perform:
 Further we will discuss how exactly YJML works and what "Create Jurisdiction" and "Leave Jurisdiction" mean in the documentation on YJML.
 
 A question of how Humanity is better than any other international environment is also worth a separate article and will consider it later.
- 
+
 ### <a id="silence-lovers"></a>Sample Tiles: The Tribe of Silence Lovers
 
 Imagine a tribe of silence lovers gathered somewhere far away from civilization. The residents of the tribe behave in such a way as to minimize any noise around them. And they also have apps on their phones that listen to noise levels.
@@ -204,13 +204,13 @@ Rights of the role:
 	- `sendSilentMessage` Send a silent message, turning all the words into polite ones
 	- `buySilentCar` Buy a new vehicle that produces minimal noise
 	- `setupNoizeListener` Install an application that monitors noise levels
- 
+
 2. Judge of the Cult of Silence
 Rights of the role:
 	- All the Actions of the role "Adept of the Cult of Silence".
 	- `sendJudgeProposal` Resolve disputes of tribe members who sued to the court
 	- `makeJudgement` Decide what the fines for producing excessive noise will go to
- 
+
 3. Application that monitors noise levels
 Rights of the role:
 	- `uploadNoizeData` Monitor noise levels through smartphone microphones in real time, recognize voices
@@ -264,7 +264,7 @@ Are not required for this tile.
 
 **Statuses specification:**
 1. Negotiating the terms
- All parties join and sign the contract 
+ All parties join and sign the contract
 2. Negotiating the milestone.
  The customer proposes the terms, describes the expected result, and the contractor asks for clarification and calls a price. The process is repeated until customers and contractorss agree on all issues.
  Next, the customer has to freeze the money on the contract
@@ -278,7 +278,7 @@ Are not required for this tile.
 5. Mediation
  Mediator reviews the relationship in the contract and defines how the stake of the contract will be allocated
 6. The contract is closed
- 
+
 **Type of Tile:**
 
 Contract (description of contractual relationship)
@@ -309,7 +309,7 @@ Actions the role can perform:
 	- Publish a report on one’s open blog between 00:00 and 24:00 UTC +0 every Saturday.
 
 2. Smart Law
-Actions the role can perform: 
+Actions the role can perform:
 	- Check once every two weeks on Sunday if the judge has released the report on time and if the report includes all the right sections.
 	- Penalize the judge if the report was not released on time, did not include the right sections, or was not released at all.
 	- Keep a record of the fact that the law was broken.
@@ -804,6 +804,6 @@ There are actually more options for using the tiles than we can even imagine! We
 For example, interesting areas like interaction with the Internet of things (doors that you can open only if you have certain rights), with data collection (writing video and audio of your life to your own storage to submit this data to courts, decentralized insurance, and so on).
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper/chapter-one"><span>Prev. chapter</span></Link>
-  <Link type="inner" to="/whitepaper"><span>Table of content</span></Link>
+  <Link type="inner" href="/whitepaper/chapter-one"><span>Prev. chapter</span></Link>
+  <Link type="inner" href="/whitepaper"><span>Table of content</span></Link>
 </WhitepaperNav>
