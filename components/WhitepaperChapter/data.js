@@ -1,6 +1,9 @@
 export const links = [
   {
-    text: 'An Abstract ',
+    text: {
+      'An Abstract ',
+      'Аннотация'
+    },
     link: 'an-abstract'
   },
   {

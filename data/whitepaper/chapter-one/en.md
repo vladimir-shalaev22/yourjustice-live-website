@@ -135,6 +135,6 @@ Concrete examples of use cases (from contracts concluded on the platform to the 
 * **We are sure**: it will be fun!
 
 <WhitepaperNav>
-  <Link type="inner" to="/whitepaper/"><span>Table of contents</span></Link>
+  <Link type="inner" to="/whitepaper/an-abstract"><span>Abstract</span></Link>
   <Link type="inner" to="/whitepaper/chapter-two"><span>Next chapter</span></Link>
 </WhitepaperNav>
