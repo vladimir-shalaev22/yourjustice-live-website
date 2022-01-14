@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import { ArticleContent, PageNavigation, Button } from 'components'
+import { ArticleContent, PageNavigation, Button, Icon } from 'components'
 
 import { getData, getAllFiles } from 'utils'
+
+import { translations } from './_data'
 
 import style from './index.module.scss'
 
@@ -45,6 +47,7 @@ export async function getStaticPaths({ locales }) {
 
 export default function Article({ data, page }) {
   const [nav, setNav] = useState([])
+  const {locale} = useRouter()
 
   return (
     <div className={style.wrapper}>
@@ -52,7 +55,7 @@ export default function Article({ data, page }) {
         <div className={style.content}>
           <div className={style.header}>
             <div className={style.breadcrumbs}>
-              <Link href="/">Home</Link> / <span>Whitepaper</span>
+              <Link href="/">Home</Link> / <Link href="/whitepaper"><a><span>Whitepaper</span></a></Link>
             </div>
             <div className={style.date}>
               Page last updated: November 25, 2021
@@ -66,6 +69,21 @@ export default function Article({ data, page }) {
         </div>
         <div className={style.sidebar}>
           <div className={style.sticky}>
+            <Link href="/whitepaper">
+              <a className={style.tableOfContents}>
+                <Icon className={style.icon} icon="chevron-right"></Icon>
+                <span>{translations.tableOfContents[locale]}</span>
+              </a>
+            </Link>
+            <a
+              href="https://github.com/YourJustice-Live/yourjustice-live-website"
+              target="_blank"
+              rel="nofollow noreferrer"
+              className={style.github}
+            >
+              <Icon className={style.githubIcon} icon="github"></Icon>
+              <span>{translations.github[locale]}</span>
+            </a>
             <PageNavigation nav={nav} sidebar={true} search={true} />
           </div>
         </div>

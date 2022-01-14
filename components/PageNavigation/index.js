@@ -4,6 +4,8 @@ import {useRouter} from 'next/router'
 
 import {Search} from 'components'
 
+import {translations} from './data'
+
 import style from './index.module.scss'
 
 const OFFSET = -70
@@ -13,6 +15,7 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
   const [active, setActive] = useState('')
   const navRef = useRef()
   const router = useRouter()
+  const {locale} = router
 
   const handleToggle = e => {
     e.preventDefault()
@@ -86,11 +89,11 @@ export default function PageNavigation({sidebar, search = false, side = 'right',
   return (
     <div className={`${style.wrapper} ${sidebar ? style.sidebar : ''} ${isOpen ? style.opened : ''} ${side === 'left' ? style.left : ''}`}>
       <button className={`${style.button} ${isOpen ? style.opened : ''}`} onClick={handleToggle}>
-        <span>On this page</span>
+        <span>{translations.onPage[locale]}</span>
       </button>
       <div className={`${style.dropdown} ${isOpen ? style.opened : ''}`}>
         {/* {search && <Search />} */}
-        <p>On this page</p>
+        <p>{translations.onPage[locale]}</p>
         <ul ref={navRef}>
           {nav.map((anchor, i) => <li key={`sdxmc230cc-1c32` + i}>
             <a className={active === anchor.id ? style.active : ''} data-id={anchor.id} onClick={handleScroll}>

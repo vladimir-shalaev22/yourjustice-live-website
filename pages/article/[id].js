@@ -5,6 +5,8 @@ import { ArticleContent, PageNavigation, Button } from 'components'
 
 import { getData, getAllFiles } from 'utils'
 
+import { translations } from './_data'
+
 import style from './index.module.scss'
 
 export async function getStaticProps(context) {
@@ -45,6 +47,7 @@ export async function getStaticPaths({ locales }) {
 export default function Article({ data, page }) {
   const [nav, setNav] = useState([])
   const router = useRouter()
+  const {locale} = router
 
   const handleBack = () => {
     router.back()
@@ -60,7 +63,7 @@ export default function Article({ data, page }) {
               reverse={true}
               onClick={handleBack}
             >
-              Back
+              {translations.back[locale]}
             </Button>
             <PageNavigation
               rootPath={`/article/${page}`}

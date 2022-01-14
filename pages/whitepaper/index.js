@@ -8,6 +8,8 @@ import {getData} from 'utils'
 
 import {links} from 'components/WhitepaperChapter/data'
 
+import { translations } from './_data'
+
 import style from './index.module.scss'
 
 export async function getStaticProps(context) {
@@ -37,7 +39,7 @@ export default function WhitePaper({data}) {
             </details>
           </div>
           <div className={style.index}>
-            <p>Table of contents</p>
+            <p>{translations.tableOfContents[locale]}</p>
             <ul>
               {links.map(elem => <li key={elem.link}>
                 {elem.inners

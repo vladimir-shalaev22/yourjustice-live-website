@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import { Header, Footer } from 'components'
+import { Header, Footer, ToTop } from 'components'
 
 import style from './style.module.scss'
 
@@ -52,6 +52,7 @@ function Layout({ children }) {
       <Header />
       {children}
       <Footer />
+      <ToTop></ToTop>
     </div>
   )
 }

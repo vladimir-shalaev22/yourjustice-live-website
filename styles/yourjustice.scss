@@ -27,6 +27,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.if-arrow-circle-up {
+  &:before {
+    content: $if-arrow-circle-up;
+  }
+}
+.if-github {
+  &:before {
+    content: $if-github;
+  }
+}
 .if-error {
   &:before {
     content: $if-error;
@@ -55,7 +65,6 @@
 .if-external-link {
   &:before {
     content: $if-external-link;
-    color: #31485f;
   }
 }
 .if-search {

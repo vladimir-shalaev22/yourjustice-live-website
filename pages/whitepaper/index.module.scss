@@ -48,6 +48,11 @@
 .sticky {
   position: sticky;
   top: 110px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .header {
@@ -64,7 +69,7 @@
     margin-bottom: 36px;
 
     span {
-      @include text-gradient(99.67deg, $gradient-second-start, -7.44%, $gradient-second-end, 111.26%);
+      @include text-gradient(99.67deg, #eb6390, -7.44%, #db6097, 111.26%);
     }
 
     a {
@@ -172,5 +177,115 @@
       bottom: -1px;
       background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
     }
+  }
+}
+
+.tableOfContents {
+  margin-bottom: 8px;
+  padding: 8px 18px 8px 0;
+  position: relative;
+
+  &:hover {
+    span {
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  & > * {
+    vertical-align: middle;
+  }
+
+  .icon {
+    @include text-gradient(279.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-size: 16px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+  }
+
+  span {
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+    }
+  }
+}
+
+.github {
+  display: inline-block;
+  padding: 12px 26px;
+  position: relative;
+  border-radius: 50px;
+  margin-bottom: 18px;
+
+  &:hover {
+    background: linear-gradient(99.67deg, rgba(255, 103, 133, 1) -7.44%, rgba(116, 76, 204, 1) 111.26%);
+
+    &:before {
+      background: linear-gradient(102.02deg, rgba(204, 123, 139, 0) -10.08%, rgba(117, 88, 180, 0) 78.68%);
+    }
+    &:after {
+      -webkit-text-fill-color: #fff;
+    }
+
+    .githubIcon, span {
+      -webkit-text-fill-color: #fff;
+    }
+  }
+
+  &:before {
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius:50px;
+    padding: 1px;
+    background:linear-gradient(to right, $gradient-first-start -10.08%, $gradient-first-end 78.68%);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  & > * {
+    vertical-align: middle;
+  }
+
+  &Icon {
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-size: 26px;
+    line-height: 26px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  span {
+    @include text-gradient(99.67deg, $gradient-first-start, -7.44%, $gradient-first-end, 111.26%);
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: $ls-first;
+    display: inline-block;
   }
 }

@@ -30,7 +30,7 @@ export default function Equilibrium() {
           <ul>
             {row.map((cell, i) => <li key={'cell' + i + 'fsdf2352f23'}>
               <p dangerouslySetInnerHTML={{ __html: cell }}></p>
-              {i !== 1 && y !== 0 && <span>{tableMob[locale][i]}</span>}
+              {i !== 0 && y !== 0 && <span>{tableMob[locale][i]}</span>}
             </li>)}
           </ul>
         </li>)}
