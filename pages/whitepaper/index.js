@@ -30,7 +30,7 @@ export default function WhitePaper({data}) {
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.header}>
-            <div className={style.breadcrumbs}><Link href="/">Home</Link> / <span>Whitepaper</span></div>
+            <div className={style.breadcrumbs}><Link href="/">Home</Link> / <Link href="/whitepaper"><span>Whitepaper</span></Link></div>
             <div className={style.date}>Page last updated: November 25, 2021</div>
             <h1>YourJustice WhitePaper</h1>
             <details>
