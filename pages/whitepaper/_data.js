@@ -4,7 +4,7 @@ export const translations = {
     ru: 'Оглавление'
   },
   github: {
-    en: 'Edit Page',
-    ru: 'Edit Page'
+    en: 'Source Code',
+    ru: 'Source Code'
   }
 }

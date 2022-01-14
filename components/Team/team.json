@@ -132,6 +132,11 @@
           "position": "Archivarius"
         },
         {
+          "name": "Sarooj Bukhari",
+          "ava": "/assets/images/sarooj-bukhari.png",
+          "position": "Front End Developer(React JS)"
+        },
+        {
           "name": "Dmitriy",
           "ava": "/assets/images/team-ava-template.svg",
           "position": "Node JS Developer"
