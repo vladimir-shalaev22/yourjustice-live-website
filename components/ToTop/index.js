@@ -37,7 +37,7 @@ export default function ToTop() {
   }, [isTop])
 
   return (
-    <a href="/" className={`${style.wrapper} ${isTop ? style.hidden : ''}`} onClick={scrollTop}>
+    <a className={`${style.wrapper} ${isTop ? style.hidden : ''}`} onClick={scrollTop}>
       <Icon className={style.icon} icon="arrow-circle-up"></Icon>
     </a>
   )
