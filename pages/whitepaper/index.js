@@ -8,7 +8,7 @@ import {getData} from 'utils'
 
 import {links} from 'components/WhitepaperChapter/data'
 
-import { translations } from './_data'
+import { translations } from '../../translations/whitepaper'
 
 import style from './index.module.scss'
 

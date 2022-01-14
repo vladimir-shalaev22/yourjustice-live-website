@@ -5,7 +5,7 @@ import { ArticleContent, PageNavigation, Button } from 'components'
 
 import { getData, getAllFiles } from 'utils'
 
-import { translations } from './_data'
+import { translations } from '../../translations/article'
 
 import style from './index.module.scss'
 

@@ -6,7 +6,7 @@ import { ArticleContent, PageNavigation, Button, Icon } from 'components'
 
 import { getData, getAllFiles } from 'utils'
 
-import { translations } from './_data'
+import { translations } from '../../translations/whitepaper'
 
 import style from './index.module.scss'
 
