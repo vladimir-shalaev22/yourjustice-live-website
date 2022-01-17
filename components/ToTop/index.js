@@ -19,10 +19,8 @@ export default function ToTop() {
     const checkTop = () => {
       const windowScroll = window.scrollY
       if (isTop && windowScroll > 80) {
-        console.log('not on top')
         setIsTop(false)
       } else if (!isTop && windowScroll <= 80) {
-        console.log('on top')
         setIsTop(true)
       }
     }

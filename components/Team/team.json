@@ -168,6 +168,19 @@
           "ava": "/assets/images/danila-medvedev.png"
         }
       ]
+    },
+    {
+      "head": "Ambasadors",
+      "members": [
+        {
+          "name": "Janina Lowisz",
+          "ava": "/assets/images/janina-lowisz.png"
+        },
+        {
+          "name": "Rod Cook",
+          "ava": "/assets/images/rod-cook.png"
+        }
+      ]
     }
   ]
 }

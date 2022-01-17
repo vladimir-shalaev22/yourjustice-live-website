@@ -93,7 +93,7 @@
 }
 
 .quote {
-  padding: 10px 59px 19px 43px;
+  padding: 10px 57px 0px 43px;
   position: relative;
 
   @include respond-to(lg) {
@@ -171,7 +171,7 @@
       }
 
       span {
-        margin-left: 50px;
+        margin-left: 16px;
 
         @include respond-to(sm) {
           position: absolute;
@@ -218,8 +218,8 @@
     line-height: 54px;
     letter-spacing: $ls-first;
     position: absolute;
-    bottom: -16px;
-    left: 240px;
+    bottom: -19px;
+    left: 238px;
     transform: translateY(100%);
 
     @include respond-to(lg) {

@@ -68,6 +68,10 @@
       letter-spacing: $ls-second;
       padding: 7px 12px;
 
+      &.active {
+        text-decoration: underline;
+      }
+
       &:hover {
         text-decoration: underline;
       }

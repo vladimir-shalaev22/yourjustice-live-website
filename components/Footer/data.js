@@ -1,59 +1,66 @@
 export const data = {
   title: {
     en: 'Contact us',
-    ru: 'Связаться с нами',
-    tr: 'Bize Ulaşın',
-    ko: '문의하기'
+    ru: 'Связаться с нами'
   },
   profile: {
     en: 'Andrey Panferov',
-    ru: 'Андрей Панферов',
-    tr: 'Andrey Panferov',
-    ko: 'Andrey Panferov'
+    ru: 'Андрей Панферов'
   },
   linksGroups: [
     {
       title: {
         en: 'YourJustice.live',
-        ru: 'YourJustice.live',
-        tr: 'YourJustice.live',
-        ko: 'YourJustice.live'
+        ru: 'YourJustice.live'
       },
       links: [
         {
           link: '/',
           text: {
-            en: 'Home',
-            ru: 'Главная',
-            tr: 'Ana',
-            ko: '기본'
-          }
-        },
-        {
-          link: '/',
-          text: {
             en: 'About',
-            ru: 'О нас',
-            tr: 'Hakkımızda',
-            ko: '회사 소개'
+            ru: 'About'
           }
         },
         {
           link: '/',
           text: {
-            en: 'Communities',
-            ru: 'Общины',
-            tr: 'Topluluklar',
-            ko: '커뮤니티'
+            en: 'WhitePaper',
+            ru: 'WhitePaper'
           }
         },
         {
           link: '/',
           text: {
-            en: 'Developers',
-            ru: 'Разработчики',
-            tr: 'Geliştiriciler',
-            ko: '개발자들'
+            en: 'Community Leaders',
+            ru: 'Community Leaders'
+          }
+        },
+        {
+          link: '/',
+          text: {
+            en: 'States',
+            ru: 'States'
+          }
+        },
+        {
+          link: '/',
+          text: {
+            en: 'Developers and Integrators',
+            ru: 'Developers and Integrators'
+          }
+        },
+        {
+          link: '/',
+          text: {
+            en: 'Ambassadors and Advisors',
+            ru: 'Ambassadors and Advisors'
+          }
+        },
+        {
+          link: '/',
+          text: {
+            en: 'Legal Documents',
+            ru: 'Legal Documents'
           }
         }
       ]
@@ -61,18 +68,14 @@ export const data = {
     {
       title: {
         en: 'Technology',
-        ru: 'Технологии',
-        tr: 'Teknoloji',
-        ko: '기술'
+        ru: 'Технологии'
       },
       links: [
         {
           link: '/',
           text: {
-            en: 'WhitePapers',
-            ru: 'WhitePapers',
-            tr: 'WhitePapers',
-            ko: 'WhitePapers'
+            en: 'e.g. Humanity',
+            ru: 'e.g. Humanity'
           }
         }
       ]

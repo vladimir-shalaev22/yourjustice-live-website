@@ -84,10 +84,33 @@
   }
 
   .button {
-    padding: 13px 44.5px;
+    padding: 13px 26px;
+    width: 270px;
 
     @include respond-to(sm) {
       width: 100%;
+    }
+  }
+
+  .anchorButton {
+    color: #fff;
+    font-family: $manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: $ls-first;
+    text-align: center;
+    padding: 13px 26px;
+    width: 270px;
+    display: block;
+    background: linear-gradient(99.67deg, $gradient-first-start -7.44%, $gradient-first-end 111.26%);
+    border-radius: 40px;
+
+    &:hover {
+      background: linear-gradient(99.67deg, #FFA3B5 -7.44%, #9975E7 111.26%);
+    }
+    &:active {
+      background: linear-gradient(99.67deg, #CC7B8B -7.44%, #7558B4 111.26%);
     }
   }
 }

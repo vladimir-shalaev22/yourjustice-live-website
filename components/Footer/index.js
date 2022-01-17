@@ -75,43 +75,30 @@ export default function Footer({lang, setLang}) {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
-        {/* <div className={style.siteLinks}>
+        <div className={style.siteLinks}>
           <div className={style.contacts} id="contacts">
             <h3>{title[locale]}:</h3>
             <ul>
-          <li>
-          <Link href="/">
-          <a className={style.profile}>
-          <Icon icon="profile" className={style.icon} /><span>{profile[locale]}</span>
-          </a>
-          </Link>
-          </li>
-          <li>
-          <Link href="/"><a><Icon icon="phone" className={style.icon} /><span>+ 342 0332 231 123</span></a></Link>
-          </li>
-          <li>
-          <Link href="/"><a><Icon icon="message" className={style.icon} /><span>andreypnfrv@gmail.com</span></a></Link>
-          </li>
-          <li>
-          <Link href="/"><a><Icon icon="send" className={style.icon} /><span>@andreypnfrv</span></a></Link>
-          </li>
+              <li>
+                <a href="mailto:team@yourjustice.live"><Icon icon="message" className={style.icon} /><span>team@yourjustice.live</span></a>
+              </li>
             </ul>
           </div>
           <div className={style.links}>
             {linksGroups.map((group, i) => <div key={`dsmc20-c1kc1` + i} className={style.linksGroup}>
-          <h3>{group.title[locale]}</h3>
-          <ul>
-          {group.links.map((link, i) => <li key={`dc1-fc2j42091` + i}>
-          <Link href={link.link}>{link.text[locale]}</Link>
-          </li>)}
-          </ul>
+              <h3>{group.title[locale]}</h3>
+              <ul>
+                {group.links.map((link, i) => <li key={`dc1-fc2j42091` + i}>
+                  <Link href={link.link}>{link.text[locale]}</Link>
+                </li>)}
+              </ul>
             </div>)}
           </div>
           <div className={style.socials}>
             <Socials socials={socialsCommon} />
             <Socials socials={tgLanguage} />
           </div>
-        </div> */}
+        </div>
         <div className={style.copy}>
           <div className={style.copyLinks}>
             <span>{copy.text[locale]}</span>

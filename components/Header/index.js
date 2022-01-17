@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {useRouter} from 'next/router'
 import Link from 'next/link'
 
@@ -9,6 +9,7 @@ import {data} from './data'
 import style from './index.module.scss'
 
 export default function Header({lang, setLang}) {
+  const [active, setActive] = useState('')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const {locale, route} = useRouter()
   const {links} = data
@@ -30,6 +31,46 @@ export default function Header({lang, setLang}) {
     })
   }
 
+  useEffect(() => {
+    const ids = links.map(link => link.link)
+    const scrollPos = window.scrollY
+    let set = ''
+    ids.forEach((id, index) => {
+      const elem = document.getElementById(id)
+      const elemPos = elem ? elem.getBoundingClientRect().top + scrollPos : 0
+      if (elemPos - (scrollPos) <= 10) {
+        set = id
+      }
+    })
+    setActive(set)
+  }, [links])
+
+  useEffect(() => {
+    const ids = links.map(link => link.link)
+
+    const onScroll = e => {
+      const scrollPos = window.scrollY
+      let set = ''
+      ids.forEach((id, index) => {
+        const elem = document.getElementById(id)
+        const elemPos = elem ? elem.getBoundingClientRect().top + scrollPos : 0
+        if (elemPos - (scrollPos) <= 10) {
+          set = id
+        }
+      })
+      console.log(set)
+      if (set !== active) {
+        setActive(set)
+      }
+    }
+
+    window.addEventListener('scroll', onScroll)
+
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+    }
+  }, [links, active])
+
   return <header className={style.header}>
     <div className={style.headerContainer}>
       <Link href="/">
@@ -44,7 +85,7 @@ export default function Header({lang, setLang}) {
               ? <Link href={`/#${link.link}`}>
                 <a>{link.text[locale]}</a>
               </Link>
-              : <a data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
+              : <a className={link.link === active ? style.active : ''} data-id={link.link} onClick={handleScroll}>{link.text[locale]}</a>
           }
         </li>)}
       </ul>
