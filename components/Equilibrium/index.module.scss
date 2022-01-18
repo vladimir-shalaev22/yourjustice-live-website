@@ -185,6 +185,8 @@
       }
 
       &:last-child {
+        border-bottom: none;
+        
         ul {
           li {
             &:not(:nth-child(1)) {

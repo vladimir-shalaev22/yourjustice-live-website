@@ -58,7 +58,6 @@ export default function Header({lang, setLang}) {
           set = id
         }
       })
-      console.log(set)
       if (set !== active) {
         setActive(set)
       }

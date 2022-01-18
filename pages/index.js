@@ -1,6 +1,6 @@
 import {
   HomeBanner, Welcome, Cards, Blockquote,
-  Inners, Equilibrium, Schedule, Team, Forms
+  Inners, Equilibrium, Roadmap, Team, Forms
 } from 'components'
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
     <Blockquote />
     <Inners />
     <Equilibrium />
-    <Schedule />
+    <Roadmap />
     <Team />
     <Forms />
   </div>

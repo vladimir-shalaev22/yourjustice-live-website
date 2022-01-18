@@ -1,0 +1,100 @@
+@import 'styles/mixins.scss';
+@import 'styles/variables.scss';
+
+.wrapper {
+  padding: 170px 27px 85px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 176px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 18px;
+  }
+
+  p {
+    color: $main-text;
+    font-family: $manrope;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: $ls-first;
+  }
+}
+
+.road {
+
+  &map {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    max-width: 1254px;
+    width: 100%;
+  }
+
+  &point {
+    margin-right: 48px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &Header {
+      font-family: $manrope;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: $ls-first;
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(1) {
+      color: rgba(99, 128, 220, 1);
+    }
+    &:nth-child(2) {
+      color: rgba(218, 99, 220, 1);
+    }
+    &:nth-child(3) {
+      color: rgba(138, 99, 220, 1);
+    }
+    &:nth-child(4) {
+      color: rgba(5, 181, 161, 1);
+    }
+
+    & > ul {
+      // padding-left: 45px;
+      //
+      // & > li {
+      //   &:last-child {
+      //     &:before {
+      //       left: 31px;
+      //     }
+      //   }
+      //   & > ul {
+      //     padding-left: 38px;
+      //
+      //     & > li {
+      //       & > ul {
+      //         padding-left: 26px;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}

@@ -10,7 +10,7 @@ export {default as Cards} from './Cards'
 export {default as Blockquote} from './Blockquote'
 export {default as Inners} from './Inners'
 export {default as Equilibrium} from './Equilibrium'
-export {default as Schedule} from './Schedule'
+export {default as Roadmap} from './Roadmap'
 export {default as Team} from './Team'
 export {default as Forms} from './Forms'
 
