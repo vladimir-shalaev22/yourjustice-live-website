@@ -4,6 +4,7 @@ import Markdown from 'markdown-to-jsx'
 import {Button, Code, CustomLink, Paragraph, ArticleTable, ArticleAuthor, WhitepaperNav} from 'components'
 
 import style from './index.module.scss'
+import { makeNavTree } from 'utils/makeNavTree'
 
 export default function ArticleContent({content, setNav}) {
   const mdRef = useRef(null)
@@ -11,6 +12,9 @@ export default function ArticleContent({content, setNav}) {
   useEffect(() => {
     if (mdRef.current) {
       const elems = mdRef.current.querySelectorAll('h1, h2, h3, h4, h5, h6')
+
+      console.log('Test utility: ', makeNavTree(Array.from(elems)))
+
       const nav = [...elems].reduce((acc, curr) => {
         const id = curr.getElementsByTagName('a')[0]?.id
         if (!id) {
